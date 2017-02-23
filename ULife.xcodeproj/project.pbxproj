@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		971C9AE81E5D592300928B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9AE71E5D592300928B0E /* AppDelegate.swift */; };
-		971C9AEA1E5D592300928B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9AE91E5D592300928B0E /* ViewController.swift */; };
-		971C9AED1E5D592300928B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971C9AEB1E5D592300928B0E /* Main.storyboard */; };
 		971C9AEF1E5D592300928B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971C9AEE1E5D592300928B0E /* Assets.xcassets */; };
 		971C9AF21E5D592300928B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971C9AF01E5D592300928B0E /* LaunchScreen.storyboard */; };
+		971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9AFC1E5D5D6D00928B0E /* ULWeatherViewController.swift */; };
+		971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9AFE1E5D5F5100928B0E /* ULBaseNavigationController.swift */; };
+		971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B041E5D7DB000928B0E /* AppDelegate.swift */; };
+		971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B081E5D7E6E00928B0E /* ULSidebar.swift */; };
+		971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0B1E5D832900928B0E /* ULConstants.swift */; };
+		971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		971C9AE41E5D592300928B0E /* ULife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ULife.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		971C9AE71E5D592300928B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		971C9AE91E5D592300928B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		971C9AEC1E5D592300928B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		971C9AEE1E5D592300928B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971C9AF11E5D592300928B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		971C9AF31E5D592300928B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971C9AFC1E5D5D6D00928B0E /* ULWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherViewController.swift; sourceTree = "<group>"; };
+		971C9AFE1E5D5F5100928B0E /* ULBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULBaseNavigationController.swift; sourceTree = "<group>"; };
+		971C9B041E5D7DB000928B0E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		971C9B081E5D7E6E00928B0E /* ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebar.swift; sourceTree = "<group>"; };
+		971C9B0B1E5D832900928B0E /* ULConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULConstants.swift; sourceTree = "<group>"; };
+		971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,81 @@
 		971C9AE61E5D592300928B0E /* ULife */ = {
 			isa = PBXGroup;
 			children = (
-				971C9AE71E5D592300928B0E /* AppDelegate.swift */,
-				971C9AE91E5D592300928B0E /* ViewController.swift */,
-				971C9AEB1E5D592300928B0E /* Main.storyboard */,
+				971C9B0A1E5D830600928B0E /* Macros */,
+				971C9B061E5D7E4D00928B0E /* View */,
+				971C9B031E5D7DB000928B0E /* AppDelegate */,
+				971C9AF91E5D5D1700928B0E /* ViewController */,
 				971C9AEE1E5D592300928B0E /* Assets.xcassets */,
 				971C9AF01E5D592300928B0E /* LaunchScreen.storyboard */,
 				971C9AF31E5D592300928B0E /* Info.plist */,
 			);
 			path = ULife;
+			sourceTree = "<group>";
+		};
+		971C9AF91E5D5D1700928B0E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B0D1E5D885600928B0E /* Sidebar */,
+				971C9AFA1E5D5D4900928B0E /* Base */,
+				971C9AFB1E5D5D4900928B0E /* Weather */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		971C9AFA1E5D5D4900928B0E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				971C9AFE1E5D5F5100928B0E /* ULBaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		971C9AFB1E5D5D4900928B0E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				971C9AFC1E5D5D6D00928B0E /* ULWeatherViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		971C9B031E5D7DB000928B0E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B041E5D7DB000928B0E /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		971C9B061E5D7E4D00928B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B071E5D7E4D00928B0E /* Sidebar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		971C9B071E5D7E4D00928B0E /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B081E5D7E6E00928B0E /* ULSidebar.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		971C9B0A1E5D830600928B0E /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B0B1E5D832900928B0E /* ULConstants.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		971C9B0D1E5D885600928B0E /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */,
+			);
+			path = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +199,6 @@
 			files = (
 				971C9AF21E5D592300928B0E /* LaunchScreen.storyboard in Resources */,
 				971C9AEF1E5D592300928B0E /* Assets.xcassets in Resources */,
-				971C9AED1E5D592300928B0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971C9AEA1E5D592300928B0E /* ViewController.swift in Sources */,
-				971C9AE81E5D592300928B0E /* AppDelegate.swift in Sources */,
+				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
+				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
+				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
+				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
+				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,
+				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		971C9AEB1E5D592300928B0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				971C9AEC1E5D592300928B0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		971C9AF01E5D592300928B0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -265,12 +333,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72MV6GX6X6;
 				INFOPLIST_FILE = ULife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codelocker.ulife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d5a4cb61-b345-4d23-a5e0-bd997045c39f";
 				PROVISIONING_PROFILE_SPECIFIER = ulife_development;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -280,10 +350,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ULife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codelocker.ulife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

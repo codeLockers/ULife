@@ -45,6 +45,10 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
         return CATransform3DConcat(rotateTransform, translateTransform)
     }
     
+    func diableSideBar() {
+        self.scrollView.isScrollEnabled = false
+    }
+    
     //MARK:- Load_UI
     private func loadUI(){
     
@@ -52,11 +56,11 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
 
         self.view.addSubview(self.scrollView)
         self.scrollView.addSubview(self.sidebar)
-
-        let view = ULWeatherViewController().view!
-        view.frame = CGRect.init(x: self.sidebarWidth, y: 0, width: ULConstants.Screen.width, height: ULConstants.Screen.height)
         
-        self.scrollView.addSubview(view)
+        let nav = ULBaseNavigationController.init(rootViewController: ULWeatherViewController())
+        self.addChildViewController(nav)
+        nav.view.frame = CGRect.init(x: self.sidebarWidth, y: 0, width: ULConstants.Screen.width, height: ULConstants.Screen.height)
+        self.scrollView.addSubview(nav.view)
     }
     
     //MARK: - Setter && Getter
@@ -69,6 +73,7 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.isUserInteractionEnabled = true
         return scrollView
     }()
     

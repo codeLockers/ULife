@@ -15,6 +15,8 @@
 		971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B081E5D7E6E00928B0E /* ULSidebar.swift */; };
 		971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0B1E5D832900928B0E /* ULConstants.swift */; };
 		971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */; };
+		973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973955C01E629B4300CD6B18 /* ULTestViewController.swift */; };
+		973955C91E62A2D100CD6B18 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		971C9B081E5D7E6E00928B0E /* ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebar.swift; sourceTree = "<group>"; };
 		971C9B0B1E5D832900928B0E /* ULConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULConstants.swift; sourceTree = "<group>"; };
 		971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarViewController.swift; sourceTree = "<group>"; };
+		973955C01E629B4300CD6B18 /* ULTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTestViewController.swift; sourceTree = "<group>"; };
+		973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		971C9AE61E5D592300928B0E /* ULife */ = {
 			isa = PBXGroup;
 			children = (
+				973955C21E629FB400CD6B18 /* Resource */,
 				971C9B0A1E5D830600928B0E /* Macros */,
 				971C9B061E5D7E4D00928B0E /* View */,
 				971C9B031E5D7DB000928B0E /* AppDelegate */,
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				971C9AFC1E5D5D6D00928B0E /* ULWeatherViewController.swift */,
+				973955C01E629B4300CD6B18 /* ULTestViewController.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -135,6 +141,22 @@
 				971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */,
 			);
 			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		973955C21E629FB400CD6B18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				973955C31E629FB400CD6B18 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		973955C31E629FB400CD6B18 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973955C91E62A2D100CD6B18 /* DancingScript-Bold.ttf in Resources */,
 				971C9AF21E5D592300928B0E /* LaunchScreen.storyboard in Resources */,
 				971C9AEF1E5D592300928B0E /* Assets.xcassets in Resources */,
 			);
@@ -209,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,

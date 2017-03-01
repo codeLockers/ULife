@@ -26,7 +26,7 @@ class ULBaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.loadUI()
         // Do any additional setup after loading the view.
     }
 
@@ -34,5 +34,14 @@ class ULBaseNavigationController: UINavigationController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: - Load_UI
+    func loadUI() {
+        
+//        self.view.isUserInteractionEnabled = true
+        self.navigationBar.barTintColor = UIColor.red
+        self.navigationBar.tintColor = UIColor.white
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.init(name: "DancingScript-Bold", size: 30)!]
 
+    }
 }

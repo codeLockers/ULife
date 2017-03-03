@@ -26,7 +26,7 @@ class ULBaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadUI()
+        loadUI()
         // Do any additional setup after loading the view.
     }
 
@@ -36,12 +36,35 @@ class ULBaseNavigationController: UINavigationController {
     }
     
     //MARK: - Load_UI
-    func loadUI() {
-        
-//        self.view.isUserInteractionEnabled = true
-        self.navigationBar.barTintColor = UIColor.red
-        self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.init(name: "DancingScript-Bold", size: 30)!]
+    private func loadUI() {
+        navigationBar.barTintColor = UIColor.ul_rgb(r: 114, g: 164, b: 211, a: 1)
+        navigationBar.tintColor = UIColor.white
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.init(name: "DancingScript-Bold", size: 30)!]
+        hideBottomLine()
+    }
+}
 
+extension ULBaseNavigationController {
+    
+   /// 隐藏NavigatorBar底部黑线
+   fileprivate func hideBottomLine() {
+        for subview in navigationBar.subviews {
+            for hairline in subview.subviews {
+                if hairline is UIImageView && hairline.bounds.height <= 1.0{
+                    hairline.isHidden = true;
+                }
+            }
+        }
+    }
+    
+    /// 设置NavigationBar的返回键的标题
+    ///
+    /// - parameter backItemTitle:  标题
+    /// - parameter viewController: 控制器
+    func set(backItemTitle title:String , viewController : UIViewController) {
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = title as String
+        viewController.navigationItem.backBarButtonItem = backItem
     }
 }

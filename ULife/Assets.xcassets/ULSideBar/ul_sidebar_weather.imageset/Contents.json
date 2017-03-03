@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "ul_sidebar_weather.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sideBar_weather@2x.png",
+      "filename" : "ul_sidebar_weather@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "sideBar_weather@3x.png",
+      "filename" : "ul_sidebar_weather@3x.png",
       "scale" : "3x"
     }
   ],

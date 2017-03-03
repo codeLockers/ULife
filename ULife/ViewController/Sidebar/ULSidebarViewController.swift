@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
+class ULSidebarViewController: ULBaseViewController,UIScrollViewDelegate,ULSidebarDelegate{
     /** 侧边栏的宽度*/
     let sidebarWidth : CGFloat = 64
     
@@ -16,11 +16,17 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadUI()
+        ULNotificationCenterManager.manger.registerDisableSidebar(self,selector: #selector(diableSidebar))
+        ULNotificationCenterManager.manger.registerEnableSidebar(self,selector: #selector(enableSidebar))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    deinit {
+        ULNotificationCenterManager.manger.removeObserver(self)
     }
     
     //MARK: - UIScrollViewDelegate
@@ -34,6 +40,24 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
         scrollView.isPagingEnabled = scrollView.contentOffset.x < (scrollView.contentSize.width - scrollView.frame.width)
     }
     
+    //MARK: - ULSidebarDelegate
+    func sidebarDidSelectAtIndex(_ index: NSInteger) {
+        //点击sidebar
+        self.scrollView.setContentOffset(CGPoint.init(x: sidebarWidth, y: 0), animated: true)
+        var vc : UIViewController?
+        switch index {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            vc = ULDemoListViewController()
+        default:
+            break
+        }
+        ULNotificationCenterManager.manger.postPushViewController(vc)
+    }
+    
     //MARK: Private_Methods
     private func transformForFraction(_ fraction:CGFloat) -> CATransform3D {
         var identity = CATransform3DIdentity
@@ -45,8 +69,16 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
         return CATransform3DConcat(rotateTransform, translateTransform)
     }
     
-    func diableSideBar() {
+    /// 禁用侧边栏
+    @objc
+    func diableSidebar() {
         self.scrollView.isScrollEnabled = false
+    }
+    
+    /// 启用侧边栏
+    @objc
+    func enableSidebar() {
+        self.scrollView.isScrollEnabled = true
     }
     
     //MARK:- Load_UI
@@ -81,6 +113,7 @@ class ULSidebarViewController: UIViewController,UIScrollViewDelegate {
     
         let sidebar = ULSidebar.init(frame: CGRect.init(x: 0, y: 0, width: self.sidebarWidth, height: ULConstants.Screen.height))
         sidebar.layer.anchorPoint = CGPoint.init(x: 1.0, y: 0.5)
+        sidebar.delegate = self
         return sidebar
     }()
 }

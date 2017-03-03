@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47B46AA38758C296089B2FBD /* Pods_ULife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25036AEABB9306F4592E97AC /* Pods_ULife.framework */; };
+		9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A51E66C72600B7718F /* ULSidebarCell.swift */; };
+		9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */; };
 		971C9AEF1E5D592300928B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971C9AEE1E5D592300928B0E /* Assets.xcassets */; };
 		971C9AF21E5D592300928B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971C9AF01E5D592300928B0E /* LaunchScreen.storyboard */; };
 		971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9AFC1E5D5D6D00928B0E /* ULWeatherViewController.swift */; };
@@ -17,9 +20,21 @@
 		971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */; };
 		973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973955C01E629B4300CD6B18 /* ULTestViewController.swift */; };
 		973955C91E62A2D100CD6B18 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */; };
+		974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7991E68604C000DB955 /* ULBaseViewController.swift */; };
+		974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */; };
+		974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */; };
+		974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */; };
+		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
+		97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */; };
+		97A871411E69B60C0006E471 /* ULEasyMisreadWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */; };
+		97A871451E69B8190006E471 /* ULMisreadWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A871441E69B8190006E471 /* ULMisreadWordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25036AEABB9306F4592E97AC /* Pods_ULife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.debug.xcconfig"; sourceTree = "<group>"; };
+		9707F1A51E66C72600B7718F /* ULSidebarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarCell.swift; sourceTree = "<group>"; };
+		9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ULGenerate.swift"; sourceTree = "<group>"; };
 		971C9AE41E5D592300928B0E /* ULife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ULife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971C9AEE1E5D592300928B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971C9AF11E5D592300928B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +47,15 @@
 		971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarViewController.swift; sourceTree = "<group>"; };
 		973955C01E629B4300CD6B18 /* ULTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTestViewController.swift; sourceTree = "<group>"; };
 		973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
+		974CB7991E68604C000DB955 /* ULBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULBaseViewController.swift; sourceTree = "<group>"; };
+		974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNotificationCenterManager.swift; sourceTree = "<group>"; };
+		974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULSidebar.swift"; sourceTree = "<group>"; };
+		974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULWeather.swift"; sourceTree = "<group>"; };
+		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
+		97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListCell.swift; sourceTree = "<group>"; };
+		97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEasyMisreadWordViewController.swift; sourceTree = "<group>"; };
+		97A871441E69B8190006E471 /* ULMisreadWordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULMisreadWordModel.swift; sourceTree = "<group>"; };
+		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B46AA38758C296089B2FBD /* Pods_ULife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9707F1A71E66C9D700B7718F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		971C9ADB1E5D592300928B0E = {
 			isa = PBXGroup;
 			children = (
 				971C9AE61E5D592300928B0E /* ULife */,
 				971C9AE51E5D592300928B0E /* Products */,
+				C836902894B10140B41E4A28 /* Pods */,
+				FEB3350235DF30D8BF260501 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +99,8 @@
 		971C9AE61E5D592300928B0E /* ULife */ = {
 			isa = PBXGroup;
 			children = (
+				974CB79D1E686109000DB955 /* Manager */,
+				9707F1A71E66C9D700B7718F /* Extension */,
 				973955C21E629FB400CD6B18 /* Resource */,
 				971C9B0A1E5D830600928B0E /* Macros */,
 				971C9B061E5D7E4D00928B0E /* View */,
@@ -79,6 +116,7 @@
 		971C9AF91E5D5D1700928B0E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				974CB7981E686025000DB955 /* Demo */,
 				971C9B0D1E5D885600928B0E /* Sidebar */,
 				971C9AFA1E5D5D4900928B0E /* Base */,
 				971C9AFB1E5D5D4900928B0E /* Weather */,
@@ -90,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				971C9AFE1E5D5F5100928B0E /* ULBaseNavigationController.swift */,
+				974CB7991E68604C000DB955 /* ULBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -123,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				971C9B081E5D7E6E00928B0E /* ULSidebar.swift */,
+				9707F1A51E66C72600B7718F /* ULSidebarCell.swift */,
 			);
 			path = Sidebar;
 			sourceTree = "<group>";
@@ -159,6 +199,68 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		974CB7981E686025000DB955 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				97A8713F1E69B5E00006E471 /* EasyMisreadWord */,
+				97A8713A1E69B49B0006E471 /* DemoList */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		974CB79D1E686109000DB955 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				974CB79E1E686109000DB955 /* NotificationCenter */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		974CB79E1E686109000DB955 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */,
+				974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */,
+				974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		97A8713A1E69B49B0006E471 /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */,
+				97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */,
+			);
+			path = DemoList;
+			sourceTree = "<group>";
+		};
+		97A8713F1E69B5E00006E471 /* EasyMisreadWord */ = {
+			isa = PBXGroup;
+			children = (
+				97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */,
+				97A871441E69B8190006E471 /* ULMisreadWordModel.swift */,
+			);
+			path = EasyMisreadWord;
+			sourceTree = "<group>";
+		};
+		C836902894B10140B41E4A28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */,
+				C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEB3350235DF30D8BF260501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25036AEABB9306F4592E97AC /* Pods_ULife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971C9AF61E5D592300928B0E /* Build configuration list for PBXNativeTarget "ULife" */;
 			buildPhases = (
+				BA8C7D5F79C397B12701A9DE /* [CP] Check Pods Manifest.lock */,
 				971C9AE01E5D592300928B0E /* Sources */,
 				971C9AE11E5D592300928B0E /* Frameworks */,
 				971C9AE21E5D592300928B0E /* Resources */,
+				AF1896E8CBF1268731C5E7E7 /* [CP] Embed Pods Frameworks */,
+				7ACA5D79492AE2F9E51F2626 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,17 +332,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7ACA5D79492AE2F9E51F2626 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ULife/Pods-ULife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1896E8CBF1268731C5E7E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ULife/Pods-ULife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8C7D5F79C397B12701A9DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		971C9AE01E5D592300928B0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */,
+				97A871451E69B8190006E471 /* ULMisreadWordModel.swift in Sources */,
+				974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
+				97A871411E69B60C0006E471 /* ULEasyMisreadWordViewController.swift in Sources */,
+				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
+				9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */,
+				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
+				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
+				97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,
+				974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */,
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +516,7 @@
 		};
 		971C9AF71E5D592300928B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72MV6GX6X6;
@@ -370,6 +534,7 @@
 		};
 		971C9AF81E5D592300928B0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

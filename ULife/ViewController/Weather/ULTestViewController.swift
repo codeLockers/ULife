@@ -17,8 +17,8 @@ class ULTestViewController: UIViewController {
         
 //        print(self.navigationController!.parent!)
         
-        let vc = self.navigationController!.parent! as! ULSidebarViewController
-        vc.diableSideBar()
+//        let vc = self.navigationController!.parent! as! ULSidebarViewController
+//        vc.diableSideBar()
         // Do any additional setup after loading the view.
     }
 

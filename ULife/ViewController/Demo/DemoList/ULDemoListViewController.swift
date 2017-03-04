@@ -13,7 +13,7 @@ class ULDemoListViewController: ULBaseViewController {
 
     fileprivate let tableView = UITableView()
     
-    fileprivate let demoNameArray : [String] = ["程序员易错发音单词"]
+    fileprivate let demoNameArray : [String] = ["EasyMisreadWord","Animations"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,8 @@ extension ULDemoListViewController: UITableViewDelegate, UITableViewDataSource{
         case 0:
             self.navigationController?.pushViewController(ULEasyMisreadWordViewController(), animated: true)
             break
+        case 1:
+            self.navigationController?.pushViewController(ULAnimationViewController(), animated: true)
         default:
             break
         }

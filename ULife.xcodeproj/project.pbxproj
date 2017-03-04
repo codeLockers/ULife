@@ -20,6 +20,9 @@
 		971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */; };
 		973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973955C01E629B4300CD6B18 /* ULTestViewController.swift */; };
 		973955C91E62A2D100CD6B18 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */; };
+		97476CCE1E6A805500B5FD1E /* ULAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */; };
+		97476CD01E6A82B200B5FD1E /* ULAnimationStyleOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */; };
+		97476CD21E6A836600B5FD1E /* ULAnimationStyleBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */; };
 		974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7991E68604C000DB955 /* ULBaseViewController.swift */; };
 		974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */; };
 		974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */; };
@@ -47,6 +50,9 @@
 		971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarViewController.swift; sourceTree = "<group>"; };
 		973955C01E629B4300CD6B18 /* ULTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTestViewController.swift; sourceTree = "<group>"; };
 		973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
+		97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationViewController.swift; sourceTree = "<group>"; };
+		97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationStyleOneView.swift; sourceTree = "<group>"; };
+		97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationStyleBaseView.swift; sourceTree = "<group>"; };
 		974CB7991E68604C000DB955 /* ULBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULBaseViewController.swift; sourceTree = "<group>"; };
 		974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNotificationCenterManager.swift; sourceTree = "<group>"; };
 		974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULSidebar.swift"; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		971C9AF91E5D5D1700928B0E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				97476CCB1E6A804100B5FD1E /* Animation */,
 				974CB7981E686025000DB955 /* Demo */,
 				971C9B0D1E5D885600928B0E /* Sidebar */,
 				971C9AFA1E5D5D4900928B0E /* Base */,
@@ -197,6 +204,25 @@
 				973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		97476CCB1E6A804100B5FD1E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */,
+				97476CCC1E6A804100B5FD1E /* View */,
+			);
+			name = Animation;
+			path = Demo/Animation;
+			sourceTree = "<group>";
+		};
+		97476CCC1E6A804100B5FD1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */,
+				97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		974CB7981E686025000DB955 /* Demo */ = {
@@ -385,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97476CCE1E6A805500B5FD1E /* ULAnimationViewController.swift in Sources */,
 				974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */,
 				97A871451E69B8190006E471 /* ULMisreadWordModel.swift in Sources */,
 				974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */,
@@ -393,9 +420,11 @@
 				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
 				9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
+				97476CD01E6A82B200B5FD1E /* ULAnimationStyleOneView.swift in Sources */,
 				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
+				97476CD21E6A836600B5FD1E /* ULAnimationStyleBaseView.swift in Sources */,
 				97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,

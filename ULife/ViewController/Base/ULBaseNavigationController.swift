@@ -40,14 +40,14 @@ class ULBaseNavigationController: UINavigationController {
         navigationBar.barTintColor = UIColor.ul_rgb(r: 114, g: 164, b: 211, a: 1)
         navigationBar.tintColor = UIColor.white
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.init(name: "DancingScript-Bold", size: 30)!]
-        hideBottomLine()
+        ul_hideBottomLine()
     }
 }
 
 extension ULBaseNavigationController {
     
    /// 隐藏NavigatorBar底部黑线
-   fileprivate func hideBottomLine() {
+   fileprivate func ul_hideBottomLine() {
         for subview in navigationBar.subviews {
             for hairline in subview.subviews {
                 if hairline is UIImageView && hairline.bounds.height <= 1.0{
@@ -61,7 +61,7 @@ extension ULBaseNavigationController {
     ///
     /// - parameter backItemTitle:  标题
     /// - parameter viewController: 控制器
-    func set(backItemTitle title:String , viewController : UIViewController) {
+    func ul_set(backItemTitle title:String , viewController : UIViewController) {
         
         let backItem = UIBarButtonItem()
         backItem.title = title as String

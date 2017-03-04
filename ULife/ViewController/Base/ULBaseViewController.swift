@@ -13,7 +13,7 @@ class ULBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置返回键标题
-        (navigationController as? ULBaseNavigationController)?.set(backItemTitle: "", viewController: self)
+        (navigationController as? ULBaseNavigationController)?.ul_set(backItemTitle: "", viewController: self)
     }
 
     override func didReceiveMemoryWarning() {

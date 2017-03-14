@@ -13,7 +13,7 @@ class ULAnimationViewController: UIViewController {
 
     fileprivate let tableView : UITableView = UITableView()
     
-    fileprivate let animationNameArray : [String] = ["Style-One"]
+    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,24 +65,26 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
         
         switch indexPath.row {
         case 0:
-            let animationView = ULAnimationStyleOneView.init(frame: ULConstants.Screen.bounces)
+            let animationView = ULAnimationButtonView.init(frame: ULConstants.Screen.bounces)
             animationView.delegate = self
             navigationController?.view.addSubview(animationView)
             break
+        case 1:
+            let animationView = ULAnimationFoldingView.init(frame: ULConstants.Screen.bounces)
+            animationView.delegate = self
+            navigationController?.view.addSubview(animationView)
         default:
             break
         }
     }
-    
-    
 }
 
-extension ULAnimationViewController:ULAnimationStyleBaseViewDelegate{
+extension ULAnimationViewController:ULAnimationBaseViewDelegate{
 
-    func aniamtionStyleViewCloseButtonPressed(_ animationStyleView : ULAnimationStyleBaseView){
+    func aniamtionViewCloseButtonPressed(_ animationView : ULAnimationBaseView){
         
-        if animationStyleView.superview != nil {
-            animationStyleView.removeFromSuperview()
+        if animationView.superview != nil {
+            animationView.removeFromSuperview()
         }
     }
 }

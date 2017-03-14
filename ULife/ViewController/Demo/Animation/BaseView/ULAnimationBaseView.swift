@@ -1,5 +1,5 @@
 //
-//  ULAnimationStyleBaseView.swift
+//  ULAnimationBaseView.swift
 //  ULife
 //
 //  Created by codeLocker on 2017/3/4.
@@ -9,17 +9,17 @@
 import UIKit
 import SnapKit
 
-protocol ULAnimationStyleBaseViewDelegate : NSObjectProtocol {
-    func aniamtionStyleViewCloseButtonPressed(_ animationStyleView : ULAnimationStyleBaseView)
+@objc protocol ULAnimationBaseViewDelegate : NSObjectProtocol {
+    @objc optional func aniamtionViewCloseButtonPressed(_ animationView : ULAnimationBaseView)
 }
 
-class ULAnimationStyleBaseView: UIView {
+class ULAnimationBaseView: UIView {
 
     fileprivate let closeBtn : UIButton = UIButton()
 
-    fileprivate let startBtn : UIButton = UIButton()
+    let startBtn : UIButton = UIButton()
     
-    var delegate : ULAnimationStyleBaseViewDelegate?
+    var delegate : ULAnimationBaseViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,6 +42,7 @@ class ULAnimationStyleBaseView: UIView {
         
         startBtn.backgroundColor = UIColor.ul_random()
         startBtn.setTitle("START", for: .normal)
+        startBtn.addTarget(self, action: #selector(startBtn_Pressed), for: .touchUpInside)
         self.addSubview(startBtn)
     }
     
@@ -64,6 +65,10 @@ class ULAnimationStyleBaseView: UIView {
     
     //MARK: - UIButton_Methods
     @objc private func closeBtn_Pressed(){
-        self.delegate?.aniamtionStyleViewCloseButtonPressed(self)
+        self.delegate?.aniamtionViewCloseButtonPressed?(self)
+    }
+    
+    @objc func startBtn_Pressed(_ sender:UIButton) {
+        
     }
 }

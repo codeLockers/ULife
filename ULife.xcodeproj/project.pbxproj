@@ -18,19 +18,22 @@
 		971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B081E5D7E6E00928B0E /* ULSidebar.swift */; };
 		971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0B1E5D832900928B0E /* ULConstants.swift */; };
 		971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */; };
+		9732E2CD1E752891000E7A48 /* UIView+ULSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732E2CC1E752891000E7A48 /* UIView+ULSnapshot.swift */; };
+		97384DCE1E6FA34900E00A3C /* ULAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */; };
+		97384DD11E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DCC1E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift */; };
+		97384DD21E6FA34900E00A3C /* ULMisreadWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DCD1E6FA34900E00A3C /* ULMisreadWordModel.swift */; };
+		97384DDB1E6FDDB600E00A3C /* ULAnimationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DD61E6FDDB600E00A3C /* ULAnimationButtonView.swift */; };
+		97384DDC1E6FDDB600E00A3C /* ULAnimationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DD81E6FDDB600E00A3C /* ULAnimationBaseView.swift */; };
+		97384DDD1E6FDDB600E00A3C /* ULAnimationFoldingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DDA1E6FDDB600E00A3C /* ULAnimationFoldingView.swift */; };
+		97384DE11E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97384DE01E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift */; };
 		973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973955C01E629B4300CD6B18 /* ULTestViewController.swift */; };
 		973955C91E62A2D100CD6B18 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */; };
-		97476CCE1E6A805500B5FD1E /* ULAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */; };
-		97476CD01E6A82B200B5FD1E /* ULAnimationStyleOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */; };
-		97476CD21E6A836600B5FD1E /* ULAnimationStyleBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */; };
 		974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7991E68604C000DB955 /* ULBaseViewController.swift */; };
 		974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */; };
 		974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */; };
 		974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */; };
 		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
 		97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */; };
-		97A871411E69B60C0006E471 /* ULEasyMisreadWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */; };
-		97A871451E69B8190006E471 /* ULMisreadWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A871441E69B8190006E471 /* ULMisreadWordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,19 +51,22 @@
 		971C9B081E5D7E6E00928B0E /* ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebar.swift; sourceTree = "<group>"; };
 		971C9B0B1E5D832900928B0E /* ULConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULConstants.swift; sourceTree = "<group>"; };
 		971C9B0E1E5D887D00928B0E /* ULSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarViewController.swift; sourceTree = "<group>"; };
+		9732E2CC1E752891000E7A48 /* UIView+ULSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULSnapshot.swift"; sourceTree = "<group>"; };
+		97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationViewController.swift; sourceTree = "<group>"; };
+		97384DCC1E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEasyMisreadWordViewController.swift; sourceTree = "<group>"; };
+		97384DCD1E6FA34900E00A3C /* ULMisreadWordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULMisreadWordModel.swift; sourceTree = "<group>"; };
+		97384DD61E6FDDB600E00A3C /* ULAnimationButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationButtonView.swift; sourceTree = "<group>"; };
+		97384DD81E6FDDB600E00A3C /* ULAnimationBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationBaseView.swift; sourceTree = "<group>"; };
+		97384DDA1E6FDDB600E00A3C /* ULAnimationFoldingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationFoldingView.swift; sourceTree = "<group>"; };
+		97384DE01E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationFoldingRotateView.swift; sourceTree = "<group>"; };
 		973955C01E629B4300CD6B18 /* ULTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTestViewController.swift; sourceTree = "<group>"; };
 		973955C41E62A2D100CD6B18 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
-		97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationViewController.swift; sourceTree = "<group>"; };
-		97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationStyleOneView.swift; sourceTree = "<group>"; };
-		97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationStyleBaseView.swift; sourceTree = "<group>"; };
 		974CB7991E68604C000DB955 /* ULBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULBaseViewController.swift; sourceTree = "<group>"; };
 		974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNotificationCenterManager.swift; sourceTree = "<group>"; };
 		974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULSidebar.swift"; sourceTree = "<group>"; };
 		974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULWeather.swift"; sourceTree = "<group>"; };
 		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
 		97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListCell.swift; sourceTree = "<group>"; };
-		97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEasyMisreadWordViewController.swift; sourceTree = "<group>"; };
-		97A871441E69B8190006E471 /* ULMisreadWordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULMisreadWordModel.swift; sourceTree = "<group>"; };
 		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */,
+				9732E2CC1E752891000E7A48 /* UIView+ULSnapshot.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -122,7 +129,6 @@
 		971C9AF91E5D5D1700928B0E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				97476CCB1E6A804100B5FD1E /* Animation */,
 				974CB7981E686025000DB955 /* Demo */,
 				971C9B0D1E5D885600928B0E /* Sidebar */,
 				971C9AFA1E5D5D4900928B0E /* Base */,
@@ -190,6 +196,51 @@
 			path = Sidebar;
 			sourceTree = "<group>";
 		};
+		97384DC61E6FA34900E00A3C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */,
+				97384DD51E6FDDB600E00A3C /* AnimationButton */,
+				97384DD71E6FDDB600E00A3C /* BaseView */,
+				97384DD91E6FDDB600E00A3C /* FoldingCell */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		97384DCB1E6FA34900E00A3C /* EasyMisreadWord */ = {
+			isa = PBXGroup;
+			children = (
+				97384DCC1E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift */,
+				97384DCD1E6FA34900E00A3C /* ULMisreadWordModel.swift */,
+			);
+			path = EasyMisreadWord;
+			sourceTree = "<group>";
+		};
+		97384DD51E6FDDB600E00A3C /* AnimationButton */ = {
+			isa = PBXGroup;
+			children = (
+				97384DD61E6FDDB600E00A3C /* ULAnimationButtonView.swift */,
+			);
+			path = AnimationButton;
+			sourceTree = "<group>";
+		};
+		97384DD71E6FDDB600E00A3C /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				97384DD81E6FDDB600E00A3C /* ULAnimationBaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		97384DD91E6FDDB600E00A3C /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				97384DDA1E6FDDB600E00A3C /* ULAnimationFoldingView.swift */,
+				97384DE01E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift */,
+			);
+			path = FoldingCell;
+			sourceTree = "<group>";
+		};
 		973955C21E629FB400CD6B18 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,29 +257,11 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		97476CCB1E6A804100B5FD1E /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				97476CCD1E6A805500B5FD1E /* ULAnimationViewController.swift */,
-				97476CCC1E6A804100B5FD1E /* View */,
-			);
-			name = Animation;
-			path = Demo/Animation;
-			sourceTree = "<group>";
-		};
-		97476CCC1E6A804100B5FD1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				97476CCF1E6A82B200B5FD1E /* ULAnimationStyleOneView.swift */,
-				97476CD11E6A836600B5FD1E /* ULAnimationStyleBaseView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		974CB7981E686025000DB955 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				97A8713F1E69B5E00006E471 /* EasyMisreadWord */,
+				97384DC61E6FA34900E00A3C /* Animation */,
+				97384DCB1E6FA34900E00A3C /* EasyMisreadWord */,
 				97A8713A1E69B49B0006E471 /* DemoList */,
 			);
 			path = Demo;
@@ -259,15 +292,6 @@
 				97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */,
 			);
 			path = DemoList;
-			sourceTree = "<group>";
-		};
-		97A8713F1E69B5E00006E471 /* EasyMisreadWord */ = {
-			isa = PBXGroup;
-			children = (
-				97A871401E69B60C0006E471 /* ULEasyMisreadWordViewController.swift */,
-				97A871441E69B8190006E471 /* ULMisreadWordModel.swift */,
-			);
-			path = EasyMisreadWord;
 			sourceTree = "<group>";
 		};
 		C836902894B10140B41E4A28 /* Pods */ = {
@@ -411,26 +435,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97476CCE1E6A805500B5FD1E /* ULAnimationViewController.swift in Sources */,
 				974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */,
-				97A871451E69B8190006E471 /* ULMisreadWordModel.swift in Sources */,
 				974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */,
+				97384DD21E6FA34900E00A3C /* ULMisreadWordModel.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
-				97A871411E69B60C0006E471 /* ULEasyMisreadWordViewController.swift in Sources */,
+				97384DDB1E6FDDB600E00A3C /* ULAnimationButtonView.swift in Sources */,
 				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
 				9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
-				97476CD01E6A82B200B5FD1E /* ULAnimationStyleOneView.swift in Sources */,
 				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
-				97476CD21E6A836600B5FD1E /* ULAnimationStyleBaseView.swift in Sources */,
+				97384DD11E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift in Sources */,
 				97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */,
+				97384DCE1E6FA34900E00A3C /* ULAnimationViewController.swift in Sources */,
+				9732E2CD1E752891000E7A48 /* UIView+ULSnapshot.swift in Sources */,
+				97384DE11E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,
 				974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */,
+				97384DDD1E6FDDB600E00A3C /* ULAnimationFoldingView.swift in Sources */,
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
+				97384DDC1E6FDDB600E00A3C /* ULAnimationBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +575,7 @@
 			baseConfigurationReference = 8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 72MV6GX6X6;
 				INFOPLIST_FILE = ULife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -566,6 +594,7 @@
 			baseConfigurationReference = C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ULife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

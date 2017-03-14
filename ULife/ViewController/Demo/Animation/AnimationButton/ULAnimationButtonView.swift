@@ -1,5 +1,5 @@
 //
-//  ULAnimationStyleOneView.swift
+//  ULAnimationButtonView.swift
 //  ULife
 //
 //  Created by codeLocker on 2017/3/4.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ULAnimationStyleOneView: ULAnimationStyleBaseView {
+class ULAnimationButtonView: ULAnimationBaseView {
 
     private let animationButtonOne = ULAnimationButtonOne()
     

@@ -9,7 +9,7 @@
 import UIKit
 
 struct ULConstants {
-    struct Screen {
+    struct screen {
         /** 屏幕的宽*/
         static let width : CGFloat = UIScreen.main.bounds.width
         /** 屏幕的高*/
@@ -17,5 +17,12 @@ struct ULConstants {
         /** 屏幕的bounces*/
         static let bounces : CGRect = UIScreen.main.bounds
     }
-
+    
+    struct color {
+        /** 导航栏默认barTint色*/
+        static let defaultNavigationBarBackgroundColor : UIColor = UIColor.ul_rgb(r: 114, g: 164, b: 211, a: 1)
+        /** 导航栏默认tint色*/
+        static let defaultNavigationBarTintColor : UIColor = UIColor.white
+    }
 }
+

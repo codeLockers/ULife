@@ -9,11 +9,11 @@
 import UIKit
 import SnapKit
 
-class ULAnimationViewController: UIViewController {
+class ULAnimationViewController: ULBaseViewController {
 
     fileprivate let tableView : UITableView = UITableView()
     
-    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell"]
+    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell","NavBarTransparent"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,14 +65,17 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
         
         switch indexPath.row {
         case 0:
-            let animationView = ULAnimationButtonView.init(frame: ULConstants.Screen.bounces)
+            let animationView = ULAnimationButtonView.init(frame: ULConstants.screen.bounces)
             animationView.delegate = self
             navigationController?.view.addSubview(animationView)
             break
         case 1:
-            let animationView = ULAnimationFoldingView.init(frame: ULConstants.Screen.bounces)
+            let animationView = ULAnimationFoldingView.init(frame: ULConstants.screen.bounces)
             animationView.delegate = self
             navigationController?.view.addSubview(animationView)
+        case 2:
+            let navBarTransparentVc = ULNavBarTransparentViewController()
+            navigationController?.pushViewController(navBarTransparentVc, animated: true)
         default:
             break
         }

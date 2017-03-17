@@ -34,6 +34,7 @@
 		974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */; };
 		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
 		97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */; };
+		97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULWeather.swift"; sourceTree = "<group>"; };
 		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
 		97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListCell.swift; sourceTree = "<group>"; };
+		97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNavBarTransparentViewController.swift; sourceTree = "<group>"; };
 		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */,
+				97F839A51E7B8A1000589AED /* NavBarTransparent */,
 				97384DD51E6FDDB600E00A3C /* AnimationButton */,
 				97384DD71E6FDDB600E00A3C /* BaseView */,
 				97384DD91E6FDDB600E00A3C /* FoldingCell */,
@@ -292,6 +295,14 @@
 				97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */,
 			);
 			path = DemoList;
+			sourceTree = "<group>";
+		};
+		97F839A51E7B8A1000589AED /* NavBarTransparent */ = {
+			isa = PBXGroup;
+			children = (
+				97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */,
+			);
+			path = NavBarTransparent;
 			sourceTree = "<group>";
 		};
 		C836902894B10140B41E4A28 /* Pods */ = {
@@ -457,6 +468,7 @@
 				974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */,
 				97384DDD1E6FDDB600E00A3C /* ULAnimationFoldingView.swift in Sources */,
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
+				97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */,
 				97384DDC1E6FDDB600E00A3C /* ULAnimationBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

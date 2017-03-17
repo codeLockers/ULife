@@ -26,6 +26,7 @@ class ULBaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegate = self
         loadUI()
         // Do any additional setup after loading the view.
     }
@@ -37,14 +38,14 @@ class ULBaseNavigationController: UINavigationController {
     
     //MARK: - Load_UI
     private func loadUI() {
-        navigationBar.barTintColor = UIColor.ul_rgb(r: 114, g: 164, b: 211, a: 1)
+        navigationBar.barTintColor = ULConstants.color.defaultNavigationBarBackgroundColor
         navigationBar.tintColor = UIColor.white
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.init(name: "DancingScript-Bold", size: 30)!]
         ul_hideBottomLine()
     }
 }
 
-extension ULBaseNavigationController {
+extension UINavigationController {
     
    /// 隐藏NavigatorBar底部黑线
    fileprivate func ul_hideBottomLine() {

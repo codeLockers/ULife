@@ -91,15 +91,15 @@ class ULSidebarViewController: ULBaseViewController,UIScrollViewDelegate,ULSideb
         
         let nav = ULBaseNavigationController.init(rootViewController: ULWeatherViewController())
         self.addChildViewController(nav)
-        nav.view.frame = CGRect.init(x: self.sidebarWidth, y: 0, width: ULConstants.Screen.width, height: ULConstants.Screen.height)
+        nav.view.frame = CGRect.init(x: self.sidebarWidth, y: 0, width: ULConstants.screen.width, height: ULConstants.screen.height)
         self.scrollView.addSubview(nav.view)
     }
     
     //MARK: - Setter && Getter
     private lazy var scrollView : UIScrollView! = {() -> UIScrollView in
         
-        let scrollView = UIScrollView.init(frame:ULConstants.Screen.bounces)
-        scrollView.contentSize = CGSize.init(width: ULConstants.Screen.width+self.sidebarWidth, height: ULConstants.Screen.height)
+        let scrollView = UIScrollView.init(frame:ULConstants.screen.bounces)
+        scrollView.contentSize = CGSize.init(width: ULConstants.screen.width+self.sidebarWidth, height: ULConstants.screen.height)
         scrollView.setContentOffset(CGPoint.init(x: self.sidebarWidth, y: 0), animated: false)
         scrollView.bounces = false
         scrollView.delegate = self
@@ -111,7 +111,7 @@ class ULSidebarViewController: ULBaseViewController,UIScrollViewDelegate,ULSideb
     
     private lazy var sidebar : ULSidebar! = { () -> ULSidebar in
     
-        let sidebar = ULSidebar.init(frame: CGRect.init(x: 0, y: 0, width: self.sidebarWidth, height: ULConstants.Screen.height))
+        let sidebar = ULSidebar.init(frame: CGRect.init(x: 0, y: 0, width: self.sidebarWidth, height: ULConstants.screen.height))
         sidebar.layer.anchorPoint = CGPoint.init(x: 1.0, y: 0.5)
         sidebar.delegate = self
         return sidebar

@@ -18,6 +18,7 @@ class ULAnimationFoldingRotateView: UIView , CAAnimationDelegate{
         view.layer.anchorPoint                         = CGPoint.init(x: 0.5, y: 1)
         view.layer.transform                           = view.transform3d()
         view.translatesAutoresizingMaskIntoConstraints = false;
+        view.layer.masksToBounds = true
         self.addSubview(view)
         backView = view
         
@@ -70,7 +71,6 @@ class ULAnimationFoldingRotateView: UIView , CAAnimationDelegate{
         rotateAnimation.beginTime = CACurrentMediaTime() + delay
         
         self.hiddenAfterAnimation = hidden
-        
         self.layer.add(rotateAnimation, forKey: "rotation.x")
     }
     

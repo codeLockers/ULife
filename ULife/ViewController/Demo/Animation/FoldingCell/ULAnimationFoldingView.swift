@@ -97,7 +97,9 @@ class ULAnimationFoldingView: ULAnimationBaseView {
         guard let animationView = self.animationView else {
             return
         }
-        animationView.subviews.forEach({$0.removeFromSuperview()})
+        animationView.subviews.forEach({
+            $0.removeFromSuperview()
+        })
     }
     //创建所有rotateView的数组
     func createAnimationItemView()->[ULAnimationFoldingRotateView] {
@@ -200,12 +202,13 @@ class ULAnimationFoldingView: ULAnimationBaseView {
     /// - Returns: 时间数组
     private func durationSequence(_ type: ULAnimationFoldingViewType)-> [TimeInterval] {
         var durations : [TimeInterval] = [0.26, 0.2, 0.2]
+        var timeValues : [TimeInterval] = []
         for index in 0..<itemCount-1 {
             let duration = durations[index]
-            durations.append(TimeInterval(duration / 2.0))
-            durations.append(TimeInterval(duration / 2.0))
+            timeValues.append(TimeInterval(duration / 2.0))
+            timeValues.append(TimeInterval(duration / 2.0))
         }
-        return durations
+        return timeValues
     }
     
     /// 展开动画
@@ -338,12 +341,8 @@ class ULAnimationFoldingView: ULAnimationBaseView {
             }
         } else { // close
             for case let view as ULAnimationFoldingRotateView in animationViewSuperView.filter({$0 is ULAnimationFoldingRotateView}) {
-                if animationType == .open {
-                    view.alpha = 0
-                } else {
                     view.alpha = 1
                     view.backView?.alpha = 0
-                }
             }
         }
     }

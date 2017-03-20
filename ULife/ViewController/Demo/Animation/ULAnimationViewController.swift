@@ -13,7 +13,7 @@ class ULAnimationViewController: ULBaseViewController {
 
     fileprivate let tableView : UITableView = UITableView()
     
-    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell","NavBarTransparent"]
+    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell","NavBarTransparent","SinningLabel"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +76,10 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
         case 2:
             let navBarTransparentVc = ULNavBarTransparentViewController()
             navigationController?.pushViewController(navBarTransparentVc, animated: true)
+        case 3:
+            let animationView = ULSpinningLabelView.init(frame: ULConstants.screen.bounces)
+            animationView.delegate = self
+            navigationController?.view.addSubview(animationView)
         default:
             break
         }

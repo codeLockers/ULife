@@ -298,7 +298,8 @@ extension UINavigationController : UINavigationControllerDelegate , UINavigation
                 } else {
                     //当转场结束时
                     coor.notifyWhenInteractionEnds({ (context) in
-                        self.dealInteractionChanges(
+                        self.dealInteractionChanges(context)
+                })
                 }
             }
         }

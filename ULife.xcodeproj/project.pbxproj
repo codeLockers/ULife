@@ -34,6 +34,8 @@
 		974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */; };
 		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
 		97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */; };
+		97BB07801E7F7467008D681D /* ULSpinningLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB077F1E7F7467008D681D /* ULSpinningLabelView.swift */; };
+		97BB07821E7F78CD008D681D /* ULSpinningLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB07811E7F78CD008D681D /* ULSpinningLabel.swift */; };
 		97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULWeather.swift"; sourceTree = "<group>"; };
 		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
 		97A8713D1E69B4BB0006E471 /* ULDemoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListCell.swift; sourceTree = "<group>"; };
+		97BB077F1E7F7467008D681D /* ULSpinningLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSpinningLabelView.swift; sourceTree = "<group>"; };
+		97BB07811E7F78CD008D681D /* ULSpinningLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSpinningLabel.swift; sourceTree = "<group>"; };
 		97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNavBarTransparentViewController.swift; sourceTree = "<group>"; };
 		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */,
+				97F839AA1E7BE06800589AED /* SpinningLabel */,
 				97F839A51E7B8A1000589AED /* NavBarTransparent */,
 				97384DD51E6FDDB600E00A3C /* AnimationButton */,
 				97384DD71E6FDDB600E00A3C /* BaseView */,
@@ -303,6 +308,15 @@
 				97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */,
 			);
 			path = NavBarTransparent;
+			sourceTree = "<group>";
+		};
+		97F839AA1E7BE06800589AED /* SpinningLabel */ = {
+			isa = PBXGroup;
+			children = (
+				97BB077F1E7F7467008D681D /* ULSpinningLabelView.swift */,
+				97BB07811E7F78CD008D681D /* ULSpinningLabel.swift */,
+			);
+			path = SpinningLabel;
 			sourceTree = "<group>";
 		};
 		C836902894B10140B41E4A28 /* Pods */ = {
@@ -451,6 +465,7 @@
 				97384DD21E6FA34900E00A3C /* ULMisreadWordModel.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
 				97384DDB1E6FDDB600E00A3C /* ULAnimationButtonView.swift in Sources */,
+				97BB07821E7F78CD008D681D /* ULSpinningLabel.swift in Sources */,
 				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
 				9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
@@ -460,6 +475,7 @@
 				97384DD11E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift in Sources */,
 				97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */,
 				97384DCE1E6FA34900E00A3C /* ULAnimationViewController.swift in Sources */,
+				97BB07801E7F7467008D681D /* ULSpinningLabelView.swift in Sources */,
 				9732E2CD1E752891000E7A48 /* UIView+ULSnapshot.swift in Sources */,
 				97384DE11E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,

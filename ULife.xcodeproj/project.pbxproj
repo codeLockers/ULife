@@ -12,6 +12,12 @@
 		970288651E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */; };
 		970288671E8369C200B2ED49 /* UIImage+ULBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */; };
 		970288691E83733C00B2ED49 /* UIView+ULEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288681E83733C00B2ED49 /* UIView+ULEffect.swift */; };
+		9702886C1E83A38C00B2ED49 /* ULLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702886B1E83A38C00B2ED49 /* ULLocationManager.swift */; };
+		970288761E83B25300B2ED49 /* ULWeatherRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288751E83B25300B2ED49 /* ULWeatherRegionView.swift */; };
+		9702887B1E83B40500B2ED49 /* ULWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702887A1E83B40500B2ED49 /* ULWeatherViewModel.swift */; };
+		9702887D1E83BC6D00B2ED49 /* ULBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702887C1E83BC6D00B2ED49 /* ULBaseViewModel.swift */; };
+		9702887F1E83C89700B2ED49 /* NSMutableAttributedString+ULGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702887E1E83C89700B2ED49 /* NSMutableAttributedString+ULGenerate.swift */; };
+		970288821E83D03A00B2ED49 /* ULActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288811E83D03A00B2ED49 /* ULActivityIndicatorView.swift */; };
 		9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A51E66C72600B7718F /* ULSidebarCell.swift */; };
 		9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */; };
 		971110931E80CC6800487CC0 /* UIView+ULFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971110921E80CC6800487CC0 /* UIView+ULFrame.swift */; };
@@ -62,6 +68,13 @@
 		970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
 		970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ULBitmap.swift"; sourceTree = "<group>"; };
 		970288681E83733C00B2ED49 /* UIView+ULEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULEffect.swift"; sourceTree = "<group>"; };
+		9702886B1E83A38C00B2ED49 /* ULLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULLocationManager.swift; sourceTree = "<group>"; };
+		9702886D1E83A5D000B2ED49 /* ULife-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ULife-Bridging-Header.h"; path = "ViewController/Weather/ULife-Bridging-Header.h"; sourceTree = "<group>"; };
+		970288751E83B25300B2ED49 /* ULWeatherRegionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherRegionView.swift; sourceTree = "<group>"; };
+		9702887A1E83B40500B2ED49 /* ULWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherViewModel.swift; sourceTree = "<group>"; };
+		9702887C1E83BC6D00B2ED49 /* ULBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULBaseViewModel.swift; sourceTree = "<group>"; };
+		9702887E1E83C89700B2ED49 /* NSMutableAttributedString+ULGenerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+ULGenerate.swift"; sourceTree = "<group>"; };
+		970288811E83D03A00B2ED49 /* ULActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULActivityIndicatorView.swift; sourceTree = "<group>"; };
 		9707F1A51E66C72600B7718F /* ULSidebarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarCell.swift; sourceTree = "<group>"; };
 		9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ULGenerate.swift"; sourceTree = "<group>"; };
 		971110921E80CC6800487CC0 /* UIView+ULFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULFrame.swift"; sourceTree = "<group>"; };
@@ -120,6 +133,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9702886A1E83A04E00B2ED49 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				9702886B1E83A38C00B2ED49 /* ULLocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		970288711E83B1FF00B2ED49 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				970288751E83B25300B2ED49 /* ULWeatherRegionView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		970288781E83B3F300B2ED49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9702887C1E83BC6D00B2ED49 /* ULBaseViewModel.swift */,
+				970288791E83B3F300B2ED49 /* Weather */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		970288791E83B3F300B2ED49 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				9702887A1E83B40500B2ED49 /* ULWeatherViewModel.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		970288801E83D01C00B2ED49 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				970288811E83D03A00B2ED49 /* ULActivityIndicatorView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		9707F1A71E66C9D700B7718F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +184,7 @@
 				970288621E8363CB00B2ED49 /* UIViewController+ULTransparent.swift */,
 				970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */,
 				970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */,
+				9702887E1E83C89700B2ED49 /* NSMutableAttributedString+ULGenerate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -173,6 +228,7 @@
 		971C9AE61E5D592300928B0E /* ULife */ = {
 			isa = PBXGroup;
 			children = (
+				970288781E83B3F300B2ED49 /* ViewModel */,
 				974CB79D1E686109000DB955 /* Manager */,
 				9707F1A71E66C9D700B7718F /* Extension */,
 				973955C21E629FB400CD6B18 /* Resource */,
@@ -183,6 +239,7 @@
 				971C9AEE1E5D592300928B0E /* Assets.xcassets */,
 				971C9AF01E5D592300928B0E /* LaunchScreen.storyboard */,
 				971C9AF31E5D592300928B0E /* Info.plist */,
+				9702886D1E83A5D000B2ED49 /* ULife-Bridging-Header.h */,
 			);
 			path = ULife;
 			sourceTree = "<group>";
@@ -227,6 +284,8 @@
 		971C9B061E5D7E4D00928B0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				970288801E83D01C00B2ED49 /* Common */,
+				970288711E83B1FF00B2ED49 /* Weather */,
 				971C9B071E5D7E4D00928B0E /* Sidebar */,
 			);
 			path = View;
@@ -334,6 +393,7 @@
 		974CB79D1E686109000DB955 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				9702886A1E83A04E00B2ED49 /* Location */,
 				974CB79E1E686109000DB955 /* NotificationCenter */,
 			);
 			path = Manager;
@@ -428,6 +488,7 @@
 					971C9AE31E5D592300928B0E = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 72MV6GX6X6;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -528,6 +589,8 @@
 				97BB07821E7F78CD008D681D /* ULSpinningLabel.swift in Sources */,
 				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
 				9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */,
+				9702887D1E83BC6D00B2ED49 /* ULBaseViewModel.swift in Sources */,
+				970288761E83B25300B2ED49 /* ULWeatherRegionView.swift in Sources */,
 				97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
 				97A3C01C1E82441A00FDC7EE /* ULPageControlAji.swift in Sources */,
@@ -544,7 +607,10 @@
 				97384DE11E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift in Sources */,
 				970288631E8363CB00B2ED49 /* UIViewController+ULTransparent.swift in Sources */,
 				970288671E8369C200B2ED49 /* UIImage+ULBitmap.swift in Sources */,
+				970288821E83D03A00B2ED49 /* ULActivityIndicatorView.swift in Sources */,
+				9702887F1E83C89700B2ED49 /* NSMutableAttributedString+ULGenerate.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
+				9702886C1E83A38C00B2ED49 /* ULLocationManager.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,
 				974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */,
@@ -558,6 +624,7 @@
 				9711109A1E80EDA800487CC0 /* ULPageControlLayer.swift in Sources */,
 				97384DDC1E6FDDB600E00A3C /* ULAnimationBaseView.swift in Sources */,
 				971110931E80CC6800487CC0 /* UIView+ULFrame.swift in Sources */,
+				9702887B1E83B40500B2ED49 /* ULWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +743,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 72MV6GX6X6;
 				INFOPLIST_FILE = ULife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -684,6 +752,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d5a4cb61-b345-4d23-a5e0-bd997045c39f";
 				PROVISIONING_PROFILE_SPECIFIER = ulife_development;
+				SWIFT_OBJC_BRIDGING_HEADER = "ULife/ViewController/Weather/ULife-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -695,12 +765,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ULife/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codelocker.ulife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ULife/ViewController/Weather/ULife-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

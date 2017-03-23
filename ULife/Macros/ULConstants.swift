@@ -24,5 +24,9 @@ struct ULConstants {
         /** 导航栏默认tint色*/
         static let defaultNavigationBarTintColor : UIColor = UIColor.white
     }
+    
+    struct venderKeys {
+        static let gaodeKey : String = "7cb67be28ddd2afa3904f8ca900267d5"
+    }
 }
 

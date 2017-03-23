@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        self.registerVenderService()
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        
         self.window?.rootViewController = ULSidebarViewController()
         self.window?.makeKeyAndVisible()
         
@@ -46,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    //MARK: Private_Methods
+    
+    /// 注册第三方服务
+    private func registerVenderService() {
+        //注册定位服务
+        ULLocationManager.manger.registerLocationService()
+    }
 }
 

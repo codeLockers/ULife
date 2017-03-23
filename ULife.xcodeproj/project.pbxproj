@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		47B46AA38758C296089B2FBD /* Pods_ULife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25036AEABB9306F4592E97AC /* Pods_ULife.framework */; };
+		970288631E8363CB00B2ED49 /* UIViewController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288621E8363CB00B2ED49 /* UIViewController+ULTransparent.swift */; };
+		970288651E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */; };
+		970288671E8369C200B2ED49 /* UIImage+ULBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */; };
+		970288691E83733C00B2ED49 /* UIView+ULEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288681E83733C00B2ED49 /* UIView+ULEffect.swift */; };
 		9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A51E66C72600B7718F /* ULSidebarCell.swift */; };
 		9707F1A91E66CA2000B7718F /* UIColor+ULGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */; };
 		971110931E80CC6800487CC0 /* UIView+ULFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971110921E80CC6800487CC0 /* UIView+ULFrame.swift */; };
@@ -54,6 +58,10 @@
 /* Begin PBXFileReference section */
 		25036AEABB9306F4592E97AC /* Pods_ULife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.debug.xcconfig"; sourceTree = "<group>"; };
+		970288621E8363CB00B2ED49 /* UIViewController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ULTransparent.swift"; sourceTree = "<group>"; };
+		970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
+		970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ULBitmap.swift"; sourceTree = "<group>"; };
+		970288681E83733C00B2ED49 /* UIView+ULEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULEffect.swift"; sourceTree = "<group>"; };
 		9707F1A51E66C72600B7718F /* ULSidebarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSidebarCell.swift; sourceTree = "<group>"; };
 		9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ULGenerate.swift"; sourceTree = "<group>"; };
 		971110921E80CC6800487CC0 /* UIView+ULFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULFrame.swift"; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 				9707F1A81E66CA2000B7718F /* UIColor+ULGenerate.swift */,
 				9732E2CC1E752891000E7A48 /* UIView+ULSnapshot.swift */,
 				971110921E80CC6800487CC0 /* UIView+ULFrame.swift */,
+				970288681E83733C00B2ED49 /* UIView+ULEffect.swift */,
+				970288621E8363CB00B2ED49 /* UIViewController+ULTransparent.swift */,
+				970288641E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift */,
+				970288661E8369C200B2ED49 /* UIImage+ULBitmap.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -504,11 +516,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970288691E83733C00B2ED49 /* UIView+ULEffect.swift in Sources */,
 				971110EB1E812D8D00487CC0 /* ULPageControlFresno.swift in Sources */,
 				974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */,
 				974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */,
 				9711109C1E80EDCE00487CC0 /* ULPageControlPuya.swift in Sources */,
 				97384DD21E6FA34900E00A3C /* ULMisreadWordModel.swift in Sources */,
+				970288651E8363ED00B2ED49 /* UINavigationController+ULTransparent.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
 				97384DDB1E6FDDB600E00A3C /* ULAnimationButtonView.swift in Sources */,
 				97BB07821E7F78CD008D681D /* ULSpinningLabel.swift in Sources */,
@@ -528,6 +542,8 @@
 				97A3C01A1E82242900FDC7EE /* ULPageControlJalapeno.swift in Sources */,
 				9732E2CD1E752891000E7A48 /* UIView+ULSnapshot.swift in Sources */,
 				97384DE11E6FE67F00E00A3C /* ULAnimationFoldingRotateView.swift in Sources */,
+				970288631E8363CB00B2ED49 /* UIViewController+ULTransparent.swift in Sources */,
+				970288671E8369C200B2ED49 /* UIImage+ULBitmap.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,

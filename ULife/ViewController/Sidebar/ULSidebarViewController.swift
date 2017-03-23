@@ -47,7 +47,7 @@ class ULSidebarViewController: ULBaseViewController,UIScrollViewDelegate,ULSideb
         var vc : UIViewController?
         switch index {
         case 0:
-            break
+            vc = ULTestViewController()
         case 1:
             break
         case 2:

@@ -25,8 +25,10 @@ class ULWeatherViewController: ULBaseViewController {
         imageView.contentMode = .center
         return imageView
     }()
-    //地区时间View
+    //地区View
     fileprivate let regionView : ULWeatherRegionView = ULWeatherRegionView()
+    //日期时间View
+    fileprivate let dateView : ULWeatherDateView = ULWeatherDateView()
     
     //MARK: - Life_Circle
     override func viewDidLoad() {
@@ -70,6 +72,7 @@ class ULWeatherViewController: ULBaseViewController {
         
         self.view.addSubview(maskView)
         self.view.addSubview(regionView)
+        self.view.addSubview(dateView)
     }
     
     private func layout() {
@@ -85,6 +88,12 @@ class ULWeatherViewController: ULBaseViewController {
             make.right.equalToSuperview()
             make.top.equalToSuperview().offset(64)
             make.height.equalTo(ULConstants.screen.width * 0.15)
+        }
+        dateView.snp.makeConstraints { (make) in
+            make.left.equalToSuperview()
+            make.top.equalTo(regionView.snp.bottom)
+            make.right.equalToSuperview()
+            make.height.equalTo(regionView)
         }
     }
 }

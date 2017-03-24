@@ -50,6 +50,7 @@
 		974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */; };
 		974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */; };
 		974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */; };
+		975390A71E84ACF5003535C8 /* ULWeatherDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390A61E84ACF5003535C8 /* ULWeatherDateView.swift */; };
 		97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */; };
 		97A3C0181E82151B00FDC7EE /* ULPageControlAleppo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0171E82151B00FDC7EE /* ULPageControlAleppo.swift */; };
 		97A3C01A1E82242900FDC7EE /* ULPageControlJalapeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0191E82242900FDC7EE /* ULPageControlJalapeno.swift */; };
@@ -109,6 +110,7 @@
 		974CB79F1E686125000DB955 /* ULNotificationCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNotificationCenterManager.swift; sourceTree = "<group>"; };
 		974CB7A11E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULSidebar.swift"; sourceTree = "<group>"; };
 		974CB7A31E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ULNotificationCenterManager+ULWeather.swift"; sourceTree = "<group>"; };
+		975390A61E84ACF5003535C8 /* ULWeatherDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherDateView.swift; sourceTree = "<group>"; };
 		97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlChimayo.swift; sourceTree = "<group>"; };
 		97A3C0171E82151B00FDC7EE /* ULPageControlAleppo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlAleppo.swift; sourceTree = "<group>"; };
 		97A3C0191E82242900FDC7EE /* ULPageControlJalapeno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlJalapeno.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				970288751E83B25300B2ED49 /* ULWeatherRegionView.swift */,
+				975390A61E84ACF5003535C8 /* ULWeatherDateView.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
 				97A3C01C1E82441A00FDC7EE /* ULPageControlAji.swift in Sources */,
 				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
+				975390A71E84ACF5003535C8 /* ULWeatherDateView.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
 				971110E91E81273B00487CC0 /* ULPageControlJaloro.swift in Sources */,

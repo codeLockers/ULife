@@ -66,7 +66,7 @@ class ULTransitionStyleOneAnimation: NSObject {
         UIView.animate(withDuration: 0.5, animations: {
             // 当前 View 变透明
             fromViewController.view.isHidden = true;
-//            fromViewController.navigationController?.navigationBar.isHidden = true
+            fromViewController.navigationController?.navigationBar.isHidden = true
 
             upAnimationImageView.frame = upAnimationImageViewFrame_end
             downAnimationImageView.frame = downAnimationImageViewFrame_end

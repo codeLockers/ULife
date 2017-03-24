@@ -17,7 +17,7 @@ extension UINavigationController {
             let needSwizzleSelectorArr = [
                 ["ori":NSSelectorFromString("_updateInteractiveTransition:"),"swi":NSSelectorFromString("ul_updateInteractiveTransition:")],
                 ["ori":#selector(popToViewController),"swi":#selector(ul_popToViewController)],
-                ["ori":#selector(popToRootViewController),"swi":#selector(ul_popToRootViewControlerAnimated)],
+                ["ori":#selector(popToRootViewController),"swi":#selector(ul_popToRootViewControler)],
             ]
             for needSwizzleSelector in needSwizzleSelectorArr {
                 let originalSelector = needSwizzleSelector["ori"]
@@ -36,10 +36,10 @@ extension UINavigationController {
         return ul_popToViewController(viewController, animated: animated)
     }
     
-    func ul_popToRootViewControlerAnimated(animated : Bool) -> [UIViewController]? {
+    func ul_popToRootViewControler(animated : Bool) -> [UIViewController]? {
         setNavigationBarBackground(alpha: (viewControllers.first?.ul_navBarBgAlpha)!)
         navigationBar.tintColor = viewControllers.first?.ul_navBarTintColor
-        return ul_popToRootViewControlerAnimated(animated: animated)
+        return ul_popToRootViewControler(animated: animated)
     }
     
     /// 手势pop
@@ -129,24 +129,25 @@ extension UINavigationController : UINavigationControllerDelegate , UINavigation
     //是否可以执行pop
     public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
         
-        if let topVc = topViewController {
-            //转场动画协调器,使用手势pop的时候会创建transitionCoordinator
-            if let coor = topVc.transitionCoordinator{
-                if coor.initiallyInteractive {
-                    return true
-                }
+        if let topVC = topViewController, let coor = topVC.transitionCoordinator, coor.initiallyInteractive {
+            if #available(iOS 10.0, *) {
+                coor.notifyWhenInteractionChanges({ (context) in
+                    self.dealInteractionChanges(context)
+                })
+            } else {
+                coor.notifyWhenInteractionEnds({ (context) in
+                    self.dealInteractionChanges(context)
+                })
             }
-        }
-        
-        var popToVc : UIViewController?
-        if viewControllers.count >= (navigationBar.items?.count)! {
-            popToVc = viewControllers[viewControllers.count - 2]
-        }
-        if popToVc != nil {
-            self.popToViewController(popToVc!, animated: true)
             return true
         }
-        return false
+        
+        let itemCount = navigationBar.items?.count ?? 0
+        let n = viewControllers.count >= itemCount ? 2 : 1
+        let popToVC = viewControllers[viewControllers.count - n]
+        
+        popToViewController(popToVC, animated: true)
+        return true
     }
     //是否可以push
     public func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {

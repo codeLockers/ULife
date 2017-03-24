@@ -89,6 +89,8 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
             let animationView = ULPageControlView.init(frame: ULConstants.screen.bounces)
             animationView.delegate = self
             navigationController?.view.addSubview(animationView)
+        case 5:
+            navigationController?.pushViewController(ULTransitionStyleOneViewController(), animated: true)
         default:
             break
         }

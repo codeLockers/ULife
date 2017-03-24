@@ -40,7 +40,6 @@ class ULTransitionStyleOneDetailViewController: ULBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "DEtail"
         self.view.backgroundColor = UIColor.white
         self.imageView.image = self.coverImage
         self.view.addSubview(self.imageView)
@@ -55,13 +54,11 @@ class ULTransitionStyleOneDetailViewController: ULBaseViewController {
     @objc
     func button_Pressed() {
         
-//        let animationContainerView = UIView.init(frame: self.view.bounds)
-//        animationContainerView.backgroundColor = UIColor.white
-//        self.view.addSubview(animationContainerView)
-//        
-//        self.closeAnimationBlock?(self)
+        let animationContainerView = UIView.init(frame: self.view.bounds)
+        animationContainerView.backgroundColor = UIColor.white
+        self.view.addSubview(animationContainerView)
         
-        let _ = self.navigationController?.popViewController(animated: true)
+        self.closeAnimationBlock?(self)
     }
 
 }

@@ -10,7 +10,11 @@ import UIKit
 
 extension UIView {
     
-    func ul_takeSnapshot(_ frame:CGRect) -> UIImage? {
+    func ul_takeSnapshot(_ frame:CGRect?) -> UIImage? {
+        
+        guard let frame = frame else {
+            return nil
+        }
         
         UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
         let context = UIGraphicsGetCurrentContext()

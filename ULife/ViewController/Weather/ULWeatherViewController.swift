@@ -35,9 +35,9 @@ class ULWeatherViewController: ULBaseViewController {
         super.viewDidLoad()
         registerKVO()
         registerNotification()
-        loadData()
         loadUI()
         layout()
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +57,7 @@ class ULWeatherViewController: ULBaseViewController {
     
     //MARK: - Load_Data
     private func loadData() {
-        self.regionView.startLoading()
+        ULLoadingStyleOneView.show(in: self.view)
         self.weatherViewModel.currentRegion()
     }
     
@@ -66,8 +66,8 @@ class ULWeatherViewController: ULBaseViewController {
         self.navigationItem.title = "Weather"
         self.ul_navBarBgAlpha = 0
         
-        imageView.effectGroup = UIMotionEffectGroup.init()
-        imageView.setEffect(xValue: 50, yValue: 50)
+        imageView.ul_effectGroup = UIMotionEffectGroup.init()
+        imageView.ul_setEffect(xValue: 50, yValue: 50)
         self.view.addSubview(imageView)
         
         self.view.addSubview(maskView)
@@ -128,7 +128,7 @@ extension ULWeatherViewController {
         
         let newValue = change?[NSKeyValueChangeKey.newKey] as? String
         if keyPath == ULWeatherViewModel_CurrentRegion_Singal {
-            self.regionView.stopLoading()
+            ULLoadingStyleOneView.hide(from: self.view)
             //获取当前地区
             guard newValue == ULViewModelSingalType.success.rawValue else {
                 return

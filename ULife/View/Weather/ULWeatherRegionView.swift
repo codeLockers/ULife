@@ -63,25 +63,3 @@ extension ULWeatherRegionView {
         self.regionLab.attributedText = attStr
     }
 }
-
-extension ULWeatherRegionView {
-    
-    func startLoading() {
-        
-        loadingView = ULActivityIndicatorView()
-        loadingView!.startAnimating()
-        self.addSubview(loadingView!)
-        loadingView!.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(80)
-            make.centerY.equalToSuperview()
-            make.height.equalTo(30)
-            make.width.equalTo(30)
-        }
-    }
-    
-    func stopLoading() {
-        loadingView?.stopAnimating()
-        loadingView?.removeFromSuperview()
-        loadingView = nil
-    }
-}

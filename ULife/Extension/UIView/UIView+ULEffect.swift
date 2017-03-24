@@ -12,11 +12,10 @@ import UIKit
 extension UIView {
     
     fileprivate struct AssociatedKeys {
-        //导航栏透明度
         static var ul_motionEffect = "ul_motionEffect"
     }
     
-    var effectGroup : UIMotionEffectGroup? {
+    var ul_effectGroup : UIMotionEffectGroup? {
         
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.ul_motionEffect, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -31,9 +30,9 @@ extension UIView {
     /// - Parameters:
     ///   - x: x轴偏移范围
     ///   - y: y轴偏移范围
-    func setEffect(xValue x : CGFloat , yValue y : CGFloat) {
+    func ul_setEffect(xValue x : CGFloat , yValue y : CGFloat) {
         
-        guard x > 0 && y > 0 && self.effectGroup != nil else {
+        guard x > 0 && y > 0 && self.ul_effectGroup != nil else {
             return
         }
         let xAxis = UIInterpolatingMotionEffect.init(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
@@ -44,8 +43,8 @@ extension UIView {
         yAxis.minimumRelativeValue = -y
         yAxis.maximumRelativeValue = y
         
-        self.removeMotionEffect(self.effectGroup!)
-        self.effectGroup?.motionEffects = [xAxis,yAxis]
-        self.addMotionEffect(self.effectGroup!)
+        self.removeMotionEffect(self.ul_effectGroup!)
+        self.ul_effectGroup?.motionEffects = [xAxis,yAxis]
+        self.addMotionEffect(self.ul_effectGroup!)
     }
 }

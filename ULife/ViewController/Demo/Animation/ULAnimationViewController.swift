@@ -13,7 +13,12 @@ class ULAnimationViewController: ULBaseViewController {
 
     fileprivate let tableView : UITableView = UITableView()
     
-    fileprivate let animationNameArray : [String] = ["AnimationButton","FoldingCell","NavBarTransparent","SinningLabel","PageControl"]
+    fileprivate let animationNameArray : [String] = ["AnimationButton",
+                                                     "FoldingCell",
+                                                     "NavBarTransparent",
+                                                     "SinningLabel",
+                                                     "PageControl",
+                                                     "TransitionStyleOne"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -49,4 +49,17 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    /// 裁剪Image
+    ///
+    /// - Parameter rect: 裁剪的区域
+    /// - Returns: 裁剪后的图片
+    func ul_crop(_ rect:CGRect?) -> UIImage? {
+        
+        guard let rect = rect else {
+            return nil
+        }
+        let imageRef = self.cgImage?.cropping(to: rect)
+        return UIImage.init(cgImage: imageRef!)
+    }
 }

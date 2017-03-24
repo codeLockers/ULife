@@ -16,8 +16,8 @@ extension UINavigationController {
         if self == UINavigationController.self {
             let needSwizzleSelectorArr = [
                 ["ori":NSSelectorFromString("_updateInteractiveTransition:"),"swi":NSSelectorFromString("ul_updateInteractiveTransition:")],
-                ["ori":#selector(popToViewController(_:animated:)),"swi":#selector(ul_popToViewController(_:animated:))],
-                ["ori":#selector(popToRootViewController(animated:)),"swi":#selector(ul_popToRootViewControler(animated:))]
+                ["ori":#selector(popToViewController),"swi":#selector(ul_popToViewController)],
+                ["ori":#selector(popToRootViewController),"swi":#selector(ul_popToRootViewControlerAnimated)],
             ]
             for needSwizzleSelector in needSwizzleSelectorArr {
                 let originalSelector = needSwizzleSelector["ori"]
@@ -28,6 +28,7 @@ extension UINavigationController {
             }
         }
     }
+
     
     func ul_popToViewController(_ viewController : UIViewController , animated : Bool) -> [UIViewController]? {
         setNavigationBarBackground(alpha: viewController.ul_navBarBgAlpha)
@@ -35,10 +36,10 @@ extension UINavigationController {
         return ul_popToViewController(viewController, animated: animated)
     }
     
-    func ul_popToRootViewControler(animated : Bool) -> [UIViewController]? {
+    func ul_popToRootViewControlerAnimated(animated : Bool) -> [UIViewController]? {
         setNavigationBarBackground(alpha: (viewControllers.first?.ul_navBarBgAlpha)!)
         navigationBar.tintColor = viewControllers.first?.ul_navBarTintColor
-        return ul_popToRootViewControler(animated: animated)
+        return ul_popToRootViewControlerAnimated(animated: animated)
     }
     
     /// 手势pop

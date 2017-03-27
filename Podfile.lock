@@ -2,12 +2,15 @@ PODS:
   - AMapFoundation-NO-IDFA (1.3.3)
   - AMapLocation-NO-IDFA (2.3.0):
     - AMapFoundation-NO-IDFA (~> 1.3)
+  - AMapSearch-NO-IDFA (4.5.0):
+    - AMapFoundation-NO-IDFA (~> 1.2)
   - MBProgressHUD (1.0.0)
   - pop (1.0.9)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - AMapLocation-NO-IDFA (= 2.3.0)
+  - AMapSearch-NO-IDFA (= 4.5.0)
   - MBProgressHUD (= 1.0.0)
   - pop (= 1.0.9)
   - SnapKit (= 3.0.2)
@@ -15,10 +18,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: 1c79258b0a2c2539a8e6809174c06c55340129a7
   AMapLocation-NO-IDFA: c458bd5f15d1243381274508f029960ae48b2801
+  AMapSearch-NO-IDFA: c14f82f9f06533b033da001c94077c50d48cee25
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 0dfd622d223e7c7198963e1fec8a542feb890ef3
+PODFILE CHECKSUM: d73a9ede0e43e8acab93cf847eb918e380c50d19
 
 COCOAPODS: 1.1.1

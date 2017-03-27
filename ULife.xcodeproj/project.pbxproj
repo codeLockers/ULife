@@ -59,6 +59,7 @@
 		9766CAF01E88BCB200E3EAEA /* Date+ULChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */; };
 		9766CAF21E88DDC700E3EAEA /* Date+ULComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF11E88DDC700E3EAEA /* Date+ULComponent.swift */; };
 		9766CAF41E88DDF200E3EAEA /* Date+ULFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF31E88DDF200E3EAEA /* Date+ULFormatter.swift */; };
+		9766CAF71E8903B000E3EAEA /* ULWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF61E8903B000E3EAEA /* ULWeatherManager.swift */; };
 		976DD20A1E856E37006B21EB /* UIViewController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */; };
 		976DD20C1E856FAE006B21EB /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */; };
 		97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */; };
@@ -129,6 +130,7 @@
 		9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULChinese.swift"; sourceTree = "<group>"; };
 		9766CAF11E88DDC700E3EAEA /* Date+ULComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULComponent.swift"; sourceTree = "<group>"; };
 		9766CAF31E88DDF200E3EAEA /* Date+ULFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULFormatter.swift"; sourceTree = "<group>"; };
+		9766CAF61E8903B000E3EAEA /* ULWeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherManager.swift; sourceTree = "<group>"; };
 		976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ULTransparent.swift"; sourceTree = "<group>"; };
 		976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
 		97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlChimayo.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 		974CB79D1E686109000DB955 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				9766CAF51E8903A100E3EAEA /* Weather */,
 				9702886A1E83A04E00B2ED49 /* Location */,
 				974CB79E1E686109000DB955 /* NotificationCenter */,
 			);
@@ -520,6 +523,14 @@
 				9766CAF31E88DDF200E3EAEA /* Date+ULFormatter.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		9766CAF51E8903A100E3EAEA /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				9766CAF61E8903B000E3EAEA /* ULWeatherManager.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		97A8713A1E69B49B0006E471 /* DemoList */ = {
@@ -719,6 +730,7 @@
 				971110E91E81273B00487CC0 /* ULPageControlJaloro.swift in Sources */,
 				97384DD11E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift in Sources */,
 				97A8713E1E69B4BB0006E471 /* ULDemoListCell.swift in Sources */,
+				9766CAF71E8903B000E3EAEA /* ULWeatherManager.swift in Sources */,
 				97384DCE1E6FA34900E00A3C /* ULAnimationViewController.swift in Sources */,
 				97BB07801E7F7467008D681D /* ULSpinningLabelView.swift in Sources */,
 				97A3C01A1E82242900FDC7EE /* ULPageControlJalapeno.swift in Sources */,

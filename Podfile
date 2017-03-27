@@ -10,4 +10,5 @@ pod 'SnapKit', '3.0.2'
 pod 'pop', '1.0.9'
 pod 'MBProgressHUD', '1.0.0'
 pod 'AMapLocation-NO-IDFA', '2.3.0'
- end
+pod 'AMapSearch-NO-IDFA', '4.5.0'
+end

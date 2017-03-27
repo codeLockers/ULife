@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//UI
 class ULWeatherViewController: ULBaseViewController {
     
     private let effectMotionLength : CGFloat = 50
@@ -53,6 +53,7 @@ class ULWeatherViewController: ULBaseViewController {
     deinit {
         ULNotificationCenterManager.manger.removeObserver(self)
         self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentRegion_Singal)
+        self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentWeather_Singal)
     }
     
     //MARK: - Load_Data
@@ -122,18 +123,28 @@ extension ULWeatherViewController {
     fileprivate func registerKVO() {
         
         self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentRegion_Singal, options: .new, context: nil)
+        self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentWeather_Singal, options: .new, context: nil)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         let newValue = change?[NSKeyValueChangeKey.newKey] as? String
         if keyPath == ULWeatherViewModel_CurrentRegion_Singal {
-            ULLoadingStyleOneView.hide(from: self.view)
             //获取当前地区
             guard newValue == ULViewModelSingalType.success.rawValue else {
+                print("定位失败")
                 return
             }
             self.regionView.updateRegion(self.weatherViewModel.currentRegionRegeoCode)
+            self.weatherViewModel.liveWeather(self.weatherViewModel.currentRegionRegeoCode?.adcode)
+            
+        }else if keyPath == ULWeatherViewModel_CurrentWeather_Singal {
+            ULLoadingStyleOneView.hide(from: self.view)
+            //获取当前实时天气
+            guard newValue == ULViewModelSingalType.success.rawValue else {
+                print("定位失败")
+                return
+            }
         }
     }
 }

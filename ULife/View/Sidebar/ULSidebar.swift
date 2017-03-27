@@ -16,7 +16,7 @@ protocol ULSidebarDelegate : NSObjectProtocol {
 
 class ULSidebar: UIView , UITableViewDelegate , UITableViewDataSource{
 
-    let imageArray : [String] = ["","ul_sidebar_weather","ul_sidebar_demo"]
+    let imageArray : [String] = ["","ul_sidebar_weather","ul_sidebar_demo","ul_sidebar_calendar"]
     var delegate : ULSidebarDelegate?
     
     override init(frame: CGRect) {

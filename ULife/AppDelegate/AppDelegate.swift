@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.rootViewController = ULSidebarViewController()
         self.window?.makeKeyAndVisible()
-        
+        print(Date().ul_chineseDate())
+        print(Date().ul_chinesrFestival())
+        print(Date().ul_internationalFestival())
         return true
     }
 

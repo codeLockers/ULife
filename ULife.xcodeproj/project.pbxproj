@@ -56,6 +56,7 @@
 		975390CA1E850628003535C8 /* ULTransitionStyleOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390C91E850628003535C8 /* ULTransitionStyleOneCollectionViewCell.swift */; };
 		975390CC1E850647003535C8 /* ULTransitionStyleOneDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390CB1E850647003535C8 /* ULTransitionStyleOneDetailViewController.swift */; };
 		975390CE1E85113B003535C8 /* ULTransitionStyleOneAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390CD1E85113B003535C8 /* ULTransitionStyleOneAnimation.swift */; };
+		9766CAF01E88BCB200E3EAEA /* Date+ULChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */; };
 		976DD20A1E856E37006B21EB /* UIViewController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */; };
 		976DD20C1E856FAE006B21EB /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */; };
 		97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */; };
@@ -123,6 +124,7 @@
 		975390C91E850628003535C8 /* ULTransitionStyleOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTransitionStyleOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		975390CB1E850647003535C8 /* ULTransitionStyleOneDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTransitionStyleOneDetailViewController.swift; sourceTree = "<group>"; };
 		975390CD1E85113B003535C8 /* ULTransitionStyleOneAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULTransitionStyleOneAnimation.swift; sourceTree = "<group>"; };
+		9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULChinese.swift"; sourceTree = "<group>"; };
 		976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ULTransparent.swift"; sourceTree = "<group>"; };
 		976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
 		97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlChimayo.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		9707F1A71E66C9D700B7718F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9766CAEC1E88BBC700E3EAEA /* Date */,
 				975390A81E84B9AE003535C8 /* NSMutableAttributedString */,
 				975390AA1E84B9AE003535C8 /* UIColor */,
 				975390AC1E84B9AE003535C8 /* UIImage */,
@@ -505,6 +508,14 @@
 			path = StyleOne;
 			sourceTree = "<group>";
 		};
+		9766CAEC1E88BBC700E3EAEA /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		97A8713A1E69B49B0006E471 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +720,7 @@
 				975390CC1E850647003535C8 /* ULTransitionStyleOneDetailViewController.swift in Sources */,
 				971C9B0F1E5D887D00928B0E /* ULSidebarViewController.swift in Sources */,
 				975390CA1E850628003535C8 /* ULTransitionStyleOneCollectionViewCell.swift in Sources */,
+				9766CAF01E88BCB200E3EAEA /* Date+ULChinese.swift in Sources */,
 				9702886C1E83A38C00B2ED49 /* ULLocationManager.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,

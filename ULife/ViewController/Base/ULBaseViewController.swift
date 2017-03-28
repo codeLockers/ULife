@@ -9,7 +9,9 @@
 import UIKit
 
 class ULBaseViewController: UIViewController {
-
+    //Vc是否正在加载数据
+    var isLoading : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置返回键标题

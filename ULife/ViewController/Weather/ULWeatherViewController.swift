@@ -62,8 +62,9 @@ class ULWeatherViewController: ULBaseViewController {
     }
     
     //MARK: - Load_Data
-    private func loadData() {
+    fileprivate func loadData() {
         ULLoadingStyleOneView.show(in: self.view)
+        self.isLoading = true
         self.weatherViewModel.currentRegion()
     }
     
@@ -71,6 +72,7 @@ class ULWeatherViewController: ULBaseViewController {
     private func loadUI() {
         self.navigationItem.title = "Weather"
         self.ul_navBarBgAlpha = 0
+        self.navigationController?.ul_setRightItem(style: .refresh, delegate: self, action: #selector(refreshBtn_Pressed))
         
         imageView.ul_effectGroup = UIMotionEffectGroup.init()
         imageView.ul_setEffect(xValue: 50, yValue: 50)
@@ -114,8 +116,19 @@ class ULWeatherViewController: ULBaseViewController {
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.top.equalTo(weatherCurrentview.snp.bottom)
+            make.top.equalTo(weatherCurrentview.snp.bottom).offset(10)
         }
+    }
+}
+
+extension ULWeatherViewController {
+    
+    @objc
+    fileprivate func refreshBtn_Pressed() {
+        if self.isLoading {
+            return
+        }
+        self.loadData()
     }
 }
 
@@ -172,6 +185,7 @@ extension ULWeatherViewController {
             
         }else if keyPath == ULWeatherViewModel_CurrentForecasWeather_Singal {
             ULLoadingStyleOneView.hide(from: self.view)
+            self.isLoading = false
             guard newValue == ULViewModelSingalType.success.rawValue else {
                 print("定位失败")
                 return

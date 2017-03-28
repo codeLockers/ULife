@@ -31,6 +31,8 @@ class ULWeatherViewController: ULBaseViewController {
     fileprivate let dateView : ULWeatherDateView = ULWeatherDateView()
     //实时天气view
     fileprivate let weatherCurrentview : ULWeatherLiveView = ULWeatherLiveView()
+    //预报天气view
+    fileprivate let weatherForecastView : ULWeatherForecastView = ULWeatherForecastView()
     
     //MARK: - Life_Circle
     override func viewDidLoad() {
@@ -79,6 +81,7 @@ class ULWeatherViewController: ULBaseViewController {
         self.view.addSubview(dateView)
         
         self.view.addSubview(weatherCurrentview)
+        self.view.addSubview(weatherForecastView)
     }
     
     private func layout() {
@@ -106,6 +109,12 @@ class ULWeatherViewController: ULBaseViewController {
             make.right.equalToSuperview()
             make.top.equalTo(dateView.snp.bottom).offset(20)
             make.height.equalTo(ULConstants.screen.width * 0.618)
+        }
+        weatherForecastView.snp.makeConstraints { (make) in
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.top.equalTo(weatherCurrentview.snp.bottom)
         }
     }
 }
@@ -168,6 +177,7 @@ extension ULWeatherViewController {
                 return
             }
             self.weatherCurrentview.updateForecastWeather(self.weatherViewModel.currentForecastWeathers)
+            self.weatherForecastView.updateForecastWeather(self.weatherViewModel.currentForecastWeathers)
         }
     }
 }

@@ -172,7 +172,7 @@ extension ULWeatherLiveView {
             return
         }
         weatherNameLab.text = liveWeather.weather
-        weatherImageView.image = self.weatherImage(liveWeather.weather)
+        weatherImageView.image = ULWeatherLiveView.weatherImage(liveWeather.weather)
         weatherLiveDetailCurrent.temperature = "\(liveWeather.temperature!) ℃"
         weatherLiveDetailCurrent.wind = "\(liveWeather.windDirection!) \(liveWeather.windPower!)级"
         weatherLiveDetailCurrent.humidity = liveWeather.humidity
@@ -208,7 +208,7 @@ extension ULWeatherLiveView {
     ///
     /// - Parameter weatherName: 气象名称
     /// - Returns: 对应的图片
-    fileprivate func weatherImage(_ weatherName:String) -> UIImage? {
+    static func weatherImage(_ weatherName:String) -> UIImage? {
         var imageName = ""
         if weatherName == "中雨" ||
             weatherName == "大雨" ||

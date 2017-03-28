@@ -59,6 +59,7 @@
 		9759B87E1E8A4BEA002DF966 /* ULWeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759B87D1E8A4BEA002DF966 /* ULWeatherForecastView.swift */; };
 		9759B8801E8A4F46002DF966 /* ULWeatherForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759B87F1E8A4F46002DF966 /* ULWeatherForecastCell.swift */; };
 		9759B8821E8A5CA6002DF966 /* UINavigationController+ULInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759B8811E8A5CA6002DF966 /* UINavigationController+ULInterface.swift */; };
+		9759B8841E8A6264002DF966 /* UIView+ULHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759B8831E8A6264002DF966 /* UIView+ULHud.swift */; };
 		9766CAF01E88BCB200E3EAEA /* Date+ULChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */; };
 		9766CAF21E88DDC700E3EAEA /* Date+ULComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF11E88DDC700E3EAEA /* Date+ULComponent.swift */; };
 		9766CAF41E88DDF200E3EAEA /* Date+ULFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF31E88DDF200E3EAEA /* Date+ULFormatter.swift */; };
@@ -134,6 +135,7 @@
 		9759B87D1E8A4BEA002DF966 /* ULWeatherForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherForecastView.swift; sourceTree = "<group>"; };
 		9759B87F1E8A4F46002DF966 /* ULWeatherForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherForecastCell.swift; sourceTree = "<group>"; };
 		9759B8811E8A5CA6002DF966 /* UINavigationController+ULInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULInterface.swift"; sourceTree = "<group>"; };
+		9759B8831E8A6264002DF966 /* UIView+ULHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ULHud.swift"; sourceTree = "<group>"; };
 		9766CAEF1E88BCB200E3EAEA /* Date+ULChinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULChinese.swift"; sourceTree = "<group>"; };
 		9766CAF11E88DDC700E3EAEA /* Date+ULComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULComponent.swift"; sourceTree = "<group>"; };
 		9766CAF31E88DDF200E3EAEA /* Date+ULFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ULFormatter.swift"; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				975390B11E84B9AE003535C8 /* UIView+ULEffect.swift */,
 				975390B21E84B9AE003535C8 /* UIView+ULFrame.swift */,
 				975390B31E84B9AE003535C8 /* UIView+ULSnapshot.swift */,
+				9759B8831E8A6264002DF966 /* UIView+ULHud.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -764,6 +767,7 @@
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
 				975390C01E84BB84003535C8 /* ULLoadingStyleOneView.swift in Sources */,
 				9759B8821E8A5CA6002DF966 /* UINavigationController+ULInterface.swift in Sources */,
+				9759B8841E8A6264002DF966 /* UIView+ULHud.swift in Sources */,
 				971110981E80ED8E00487CC0 /* ULBasePageControl.swift in Sources */,
 				975390C61E84EAC8003535C8 /* ULTransitionStyleOneViewController.swift in Sources */,
 				976DD20C1E856FAE006B21EB /* UINavigationController+ULTransparent.swift in Sources */,

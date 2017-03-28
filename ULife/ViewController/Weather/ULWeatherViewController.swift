@@ -166,7 +166,7 @@ extension ULWeatherViewController {
         if keyPath == ULWeatherViewModel_CurrentRegion_Singal {
             //获取当前地区
             guard newValue == ULViewModelSingalType.success.rawValue else {
-                print("定位失败")
+                self.view.ul_hint("定位失败")
                 return
             }
             self.regionView.updateRegion(self.weatherViewModel.currentRegionRegeoCode)
@@ -176,7 +176,7 @@ extension ULWeatherViewController {
         }else if keyPath == ULWeatherViewModel_CurrentLiveWeather_Singal {
             //获取当前实时天气
             guard newValue == ULViewModelSingalType.success.rawValue else {
-                print("定位失败")
+                self.view.ul_hint("获取实时天气失败")
                 return
             }
             self.weatherCurrentview.updateLiveWeather(self.weatherViewModel.currentLiveWeather)
@@ -187,7 +187,7 @@ extension ULWeatherViewController {
             ULLoadingStyleOneView.hide(from: self.view)
             self.isLoading = false
             guard newValue == ULViewModelSingalType.success.rawValue else {
-                print("定位失败")
+                self.view.ul_hint("获取预报天气失败")
                 return
             }
             self.weatherCurrentview.updateForecastWeather(self.weatherViewModel.currentForecastWeathers)

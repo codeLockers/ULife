@@ -93,5 +93,19 @@ extension Date {
         return range!.upperBound - range!.lowerBound
     }
     
-    
+    /// 与Date是否是同一天(比较年月日)
+    ///
+    /// - Parameter date: compareDate
+    /// - Returns: true:同一天 false:非同一天
+    func ul_isSameDay(_ date:Date?) -> Bool {
+        
+        guard let date = date else {
+            return false
+        }
+
+        guard self.ul_year() == date.ul_year() && self.ul_month() == date.ul_month() && self.ul_day() == date.ul_day() else {
+            return false
+        }
+        return true
+    }
 }

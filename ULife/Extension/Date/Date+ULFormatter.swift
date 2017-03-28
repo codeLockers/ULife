@@ -84,17 +84,24 @@ extension Date {
             return nil
         }
         
-        var dateType = dateType
-        var timeType = timeType
+        let dateType = dateType
+        let timeType = timeType
         
-        if dateType == nil {
-            dateType = .line
+        var dateFormat = ""
+        
+        if dateType != nil {
+            dateFormat += "\(dateType!.rawValue)"
         }
-        if timeType == nil {
-            timeType = .colon
+        if timeType != nil {
+            dateFormat += " \(timeType!.rawValue)"
         }
+        
+        guard dateFormat.characters.count > 0 else {
+            return nil
+        }
+        
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "\(dateType!.rawValue) \(timeType!.rawValue)"
+        dateFormatter.dateFormat = dateFormat
         return dateFormatter.date(from: dateString)
     }
     

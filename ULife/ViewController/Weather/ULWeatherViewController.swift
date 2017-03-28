@@ -29,6 +29,8 @@ class ULWeatherViewController: ULBaseViewController {
     fileprivate let regionView : ULWeatherRegionView = ULWeatherRegionView()
     //日期时间View
     fileprivate let dateView : ULWeatherDateView = ULWeatherDateView()
+    //实时天气view
+    fileprivate let weatherCurrentview : ULWeatherLiveView = ULWeatherLiveView()
     
     //MARK: - Life_Circle
     override func viewDidLoad() {
@@ -53,7 +55,8 @@ class ULWeatherViewController: ULBaseViewController {
     deinit {
         ULNotificationCenterManager.manger.removeObserver(self)
         self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentRegion_Singal)
-        self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentWeather_Singal)
+        self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentLiveWeather_Singal)
+        self.weatherViewModel.removeObserver(self, forKeyPath: ULWeatherViewModel_CurrentForecasWeather_Singal)
     }
     
     //MARK: - Load_Data
@@ -74,6 +77,8 @@ class ULWeatherViewController: ULBaseViewController {
         self.view.addSubview(maskView)
         self.view.addSubview(regionView)
         self.view.addSubview(dateView)
+        
+        self.view.addSubview(weatherCurrentview)
     }
     
     private func layout() {
@@ -95,6 +100,12 @@ class ULWeatherViewController: ULBaseViewController {
             make.top.equalTo(regionView.snp.bottom)
             make.right.equalToSuperview()
             make.height.equalTo(regionView)
+        }
+        weatherCurrentview.snp.makeConstraints { (make) in
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.top.equalTo(dateView.snp.bottom).offset(20)
+            make.height.equalTo(ULConstants.screen.width * 0.618)
         }
     }
 }
@@ -123,7 +134,8 @@ extension ULWeatherViewController {
     fileprivate func registerKVO() {
         
         self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentRegion_Singal, options: .new, context: nil)
-        self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentWeather_Singal, options: .new, context: nil)
+        self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentLiveWeather_Singal, options: .new, context: nil)
+        self.weatherViewModel.addObserver(self, forKeyPath: ULWeatherViewModel_CurrentForecasWeather_Singal, options: .new, context: nil)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -136,15 +148,26 @@ extension ULWeatherViewController {
                 return
             }
             self.regionView.updateRegion(self.weatherViewModel.currentRegionRegeoCode)
+            //获取实时天气
             self.weatherViewModel.liveWeather(self.weatherViewModel.currentRegionRegeoCode?.adcode)
             
-        }else if keyPath == ULWeatherViewModel_CurrentWeather_Singal {
-            ULLoadingStyleOneView.hide(from: self.view)
+        }else if keyPath == ULWeatherViewModel_CurrentLiveWeather_Singal {
             //获取当前实时天气
             guard newValue == ULViewModelSingalType.success.rawValue else {
                 print("定位失败")
                 return
             }
+            self.weatherCurrentview.updateLiveWeather(self.weatherViewModel.currentLiveWeather)
+            //获取预报天气
+            self.weatherViewModel.forecastWeather(self.weatherViewModel.currentRegionRegeoCode?.adcode)
+            
+        }else if keyPath == ULWeatherViewModel_CurrentForecasWeather_Singal {
+            ULLoadingStyleOneView.hide(from: self.view)
+            guard newValue == ULViewModelSingalType.success.rawValue else {
+                print("定位失败")
+                return
+            }
+            self.weatherCurrentview.updateForecastWeather(self.weatherViewModel.currentForecastWeathers)
         }
     }
 }

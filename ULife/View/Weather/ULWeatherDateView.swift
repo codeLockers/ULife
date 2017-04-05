@@ -28,9 +28,13 @@ class ULWeatherDateView: UIView {
         let chineseMonth = date.ul_chineseDate().month ?? ""
         let chineseDay = date.ul_chineseDate().day ?? ""
         var festival = date.ul_chineseFestival() ?? ""
+        let solarTerm = date.ul_24solarTermsFestival()
         let internationalFestival = date.ul_internationalFestival()
         if internationalFestival != nil {
             festival += internationalFestival!
+        }
+        if solarTerm != nil {
+            festival += solarTerm!
         }
         label.text = chineseYear + chineseMonth + chineseDay + " " + festival
         return label

@@ -235,7 +235,7 @@ class ULAnimationButtonTwo: UIButton {
             CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(controlPoints: 0.4, 0.0, 0.2, 1.0))
             
             let topRotation = CAKeyframeAnimation.init(keyPath: "transform")
-            topRotation.values = topLayer.ul_rotationValuesFromTransform(topLayer.transform, endValue: showMenu ? CGFloat(-M_PI - M_PI_4) : CGFloat(M_PI + M_PI_4))
+            topRotation.values = topLayer.ul_rotationValuesFromTransform(topLayer.transform, endValue: showMenu ? -(.pi + .pi / 4) : (.pi + .pi / 4))
             topRotation.calculationMode = kCAAnimationCubic
             topRotation.keyTimes = [0.0,0.33,0.73,1.0]
             topLayer.ul_applyKeyframeValuesAnimation(topRotation)
@@ -253,12 +253,12 @@ class ULAnimationButtonTwo: UIButton {
             topLayer.strokeStart = showMenu ? 0 : 0.3
 
             let middleRotation = CAKeyframeAnimation.init(keyPath: "transform")
-            middleRotation.values = middleLayer.ul_rotationValuesFromTransform(middleLayer.transform, endValue: showMenu ? CGFloat(-M_PI) :CGFloat(M_PI))
+            middleRotation.values = middleLayer.ul_rotationValuesFromTransform(middleLayer.transform, endValue: showMenu ? -.pi :.pi)
             middleLayer.ul_applyKeyframeValuesAnimation(middleRotation)
             middleLayer.strokeEnd = showMenu ? 1.0 : 0.85
             
             let bottomRotation = CAKeyframeAnimation.init(keyPath: "transform")
-            bottomRotation.values = bottomLayer.ul_rotationValuesFromTransform(bottomLayer.transform, endValue: showMenu ? CGFloat(-M_PI_2 - M_PI_4) : CGFloat(M_PI_2 + M_PI_4))
+            bottomRotation.values = bottomLayer.ul_rotationValuesFromTransform(bottomLayer.transform, endValue: showMenu ? -(.pi / 2 + .pi / 4) : (.pi / 2 + .pi / 4))
             bottomRotation.calculationMode = kCAAnimationCubic
             bottomRotation.keyTimes = [0.0, 0.33, 0.63, 1.0]
             bottomLayer.ul_applyKeyframeValuesAnimation(bottomRotation)

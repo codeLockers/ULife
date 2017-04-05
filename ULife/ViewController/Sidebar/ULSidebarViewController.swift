@@ -62,7 +62,7 @@ class ULSidebarViewController: ULBaseViewController,UIScrollViewDelegate,ULSideb
     private func transformForFraction(_ fraction:CGFloat) -> CATransform3D {
         var identity = CATransform3DIdentity
         identity.m34 = -1.0 / 1000.0;
-        let angle = Double(1.0 - fraction) * -M_PI_2
+        let angle = Double(1.0 - fraction) * -.pi / 2
         let xOffset = self.sidebar.bounds.width * 0.5
         let rotateTransform = CATransform3DRotate(identity, CGFloat(angle), 0.0, 1.0, 0.0)
         let translateTransform = CATransform3DMakeTranslation(xOffset, 0.0, 0.0)

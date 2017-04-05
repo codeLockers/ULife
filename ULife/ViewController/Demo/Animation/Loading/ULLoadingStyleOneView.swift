@@ -86,21 +86,21 @@ extension ULLoadingStyleOneView {
         
         //圆1的路径
         let path1 = UIBezierPath.init()
-        path1.addArc(withCenter: otherRoundCenter1, radius: 10, startAngle: -CGFloat(M_PI), endAngle: 0, clockwise: true)
+        path1.addArc(withCenter: otherRoundCenter1, radius: 10, startAngle: -.pi, endAngle: 0, clockwise: true)
         let path1_1 = UIBezierPath.init()
-        path1_1.addArc(withCenter: otherRoundCenter2, radius: 10, startAngle: CGFloat(M_PI), endAngle: 0, clockwise: false)
+        path1_1.addArc(withCenter: otherRoundCenter2, radius: 10, startAngle: .pi, endAngle: 0, clockwise: false)
         path1.append(path1_1)
         
         viewMovePathAnim(view: round1, path: path1, time: animationDuration)
         viewColorAnim(view: round1, fromColor: round1BackgroundColor, toColor: round3BackgroundColor, time: animationDuration)
         
         let path2 = UIBezierPath.init()
-        path2.addArc(withCenter: otherRoundCenter1, radius: 10, startAngle: 0, endAngle: -CGFloat(M_PI), clockwise: true)
+        path2.addArc(withCenter: otherRoundCenter1, radius: 10, startAngle: 0, endAngle: -.pi, clockwise: true)
         
         viewMovePathAnim(view: round2, path: path2, time: animationDuration)
         viewColorAnim(view: round2, fromColor: round2BackgroundColor, toColor: round1BackgroundColor, time: animationDuration)
         let path3 = UIBezierPath.init()
-        path3.addArc(withCenter: otherRoundCenter2, radius: 10, startAngle: 0, endAngle: -CGFloat(M_PI), clockwise: false)
+        path3.addArc(withCenter: otherRoundCenter2, radius: 10, startAngle: 0, endAngle: -.pi, clockwise: false)
         
         viewMovePathAnim(view: round3, path: path3, time: animationDuration)
         viewColorAnim(view: round3, fromColor: round3BackgroundColor, toColor: round2BackgroundColor, time: animationDuration)

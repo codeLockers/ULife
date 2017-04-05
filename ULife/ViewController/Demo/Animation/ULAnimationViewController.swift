@@ -18,7 +18,8 @@ class ULAnimationViewController: ULBaseViewController {
                                                      "NavBarTransparent",
                                                      "SinningLabel",
                                                      "PageControl",
-                                                     "TransitionStyleOne"]
+                                                     "TransitionStyleOne",
+                                                     "ULWaveStyleOneView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +92,10 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
             navigationController?.view.addSubview(animationView)
         case 5:
             navigationController?.pushViewController(ULTransitionStyleOneViewController(), animated: true)
+        case 6:
+            let animationView = ULWaveStyleOneView.init(frame: ULConstants.screen.bounces)
+            animationView.delegate = self
+            navigationController?.view.addSubview(animationView)
         default:
             break
         }

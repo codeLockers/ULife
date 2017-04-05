@@ -127,7 +127,7 @@ class ULSpinningLabel: UIView {
         let didAppearTransform = CATransform3DIdentity
 
         let disappearPerspective = -0.01
-        let disappearRotation = spinDirection * CGFloat(M_PI_4)
+        let disappearRotation = spinDirection * .pi / 4
         let disappearOffset = ceil(-spinDirection * 1.5 * totalHeight)
         var willDisappearTransform = CATransform3DIdentity
         willDisappearTransform.m34 = CGFloat(disappearPerspective)

@@ -27,6 +27,7 @@ class ULBaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        self.swizzMethods()
         loadUI()
         // Do any additional setup after loading the view.
     }

@@ -11,24 +11,21 @@ import UIKit
 
 extension UINavigationController {
     
-    open override class func initialize(){
-        
-        if self == UINavigationController.self {
-            let needSwizzleSelectorArr = [
-                ["ori":NSSelectorFromString("_updateInteractiveTransition:"),"swi":NSSelectorFromString("ul_updateInteractiveTransition:")],
-                ["ori":#selector(popToViewController),"swi":#selector(ul_popToViewController)],
-                ["ori":#selector(popToRootViewController),"swi":#selector(ul_popToRootViewControler)],
+    func swizzMethods(){
+
+        let needSwizzleSelectorArr = [
+            ["ori":NSSelectorFromString("_updateInteractiveTransition:"),"swi":NSSelectorFromString("ul_updateInteractiveTransition:")],
+            ["ori":#selector(popToViewController),"swi":#selector(ul_popToViewController)],
+            ["ori":#selector(popToRootViewController),"swi":#selector(ul_popToRootViewControler)],
             ]
-            for needSwizzleSelector in needSwizzleSelectorArr {
-                let originalSelector = needSwizzleSelector["ori"]
-                let swizzledSelector = needSwizzleSelector["swi"]
-                let originalMethod = class_getInstanceMethod(self, originalSelector)
-                let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-                method_exchangeImplementations(originalMethod, swizzledMethod)
-            }
+        for needSwizzleSelector in needSwizzleSelectorArr {
+            let originalSelector = needSwizzleSelector["ori"]
+            let swizzledSelector = needSwizzleSelector["swi"]
+            let originalMethod = class_getInstanceMethod(UINavigationController.self, originalSelector)
+            let swizzledMethod = class_getInstanceMethod(UINavigationController.self, swizzledSelector)
+            method_exchangeImplementations(originalMethod, swizzledMethod)
         }
     }
-
     
     func ul_popToViewController(_ viewController : UIViewController , animated : Bool) -> [UIViewController]? {
         setNavigationBarBackground(alpha: viewController.ul_navBarBgAlpha)

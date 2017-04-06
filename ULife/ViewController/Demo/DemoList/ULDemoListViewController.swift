@@ -13,7 +13,7 @@ class ULDemoListViewController: ULBaseViewController {
 
     fileprivate let tableView = UITableView()
     
-    fileprivate let demoNameArray : [String] = ["EasyMisreadWord","Animations"]
+    fileprivate let demoNameArray : [String] = ["EasyMisreadWord","Animations","GesturePassword"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +70,8 @@ extension ULDemoListViewController: UITableViewDelegate, UITableViewDataSource{
             break
         case 1:
             self.navigationController?.pushViewController(ULAnimationViewController(), animated: true)
+        case 2:
+            self.navigationController?.pushViewController(ULGesturePasswordViewController(), animated: true)
         default:
             break
         }

@@ -69,6 +69,10 @@
 		9766CAF91E89171700E3EAEA /* ULWeatherLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766CAF81E89171700E3EAEA /* ULWeatherLiveView.swift */; };
 		976DD20A1E856E37006B21EB /* UIViewController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */; };
 		976DD20C1E856FAE006B21EB /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */; };
+		977A598C1E94D7EC00889842 /* ULGesturePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */; };
+		977A598F1E94D8C600889842 /* ULGesturePasswordThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A598E1E94D8C600889842 /* ULGesturePasswordThumbnailView.swift */; };
+		977A59911E94D8DE00889842 /* ULGesturePasswordDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A59901E94D8DE00889842 /* ULGesturePasswordDrawView.swift */; };
+		977A59931E94E6A200889842 /* ULGesturePasswordCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A59921E94E6A200889842 /* ULGesturePasswordCircle.swift */; };
 		97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */; };
 		97A3C0181E82151B00FDC7EE /* ULPageControlAleppo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0171E82151B00FDC7EE /* ULPageControlAleppo.swift */; };
 		97A3C01A1E82242900FDC7EE /* ULPageControlJalapeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3C0191E82242900FDC7EE /* ULPageControlJalapeno.swift */; };
@@ -147,6 +151,10 @@
 		9766CAF81E89171700E3EAEA /* ULWeatherLiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULWeatherLiveView.swift; sourceTree = "<group>"; };
 		976DD2091E856E37006B21EB /* UIViewController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ULTransparent.swift"; sourceTree = "<group>"; };
 		976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
+		977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordViewController.swift; sourceTree = "<group>"; };
+		977A598E1E94D8C600889842 /* ULGesturePasswordThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordThumbnailView.swift; sourceTree = "<group>"; };
+		977A59901E94D8DE00889842 /* ULGesturePasswordDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordDrawView.swift; sourceTree = "<group>"; };
+		977A59921E94E6A200889842 /* ULGesturePasswordCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordCircle.swift; sourceTree = "<group>"; };
 		97A3C0151E820B9C00FDC7EE /* ULPageControlChimayo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlChimayo.swift; sourceTree = "<group>"; };
 		97A3C0171E82151B00FDC7EE /* ULPageControlAleppo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlAleppo.swift; sourceTree = "<group>"; };
 		97A3C0191E82242900FDC7EE /* ULPageControlJalapeno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPageControlJalapeno.swift; sourceTree = "<group>"; };
@@ -325,6 +333,7 @@
 		971C9B061E5D7E4D00928B0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				977A598D1E94D89F00889842 /* GesturePassword */,
 				970288801E83D01C00B2ED49 /* Common */,
 				970288711E83B1FF00B2ED49 /* Weather */,
 				971C9B071E5D7E4D00928B0E /* Sidebar */,
@@ -427,6 +436,7 @@
 		974CB7981E686025000DB955 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				977A598A1E94D7AB00889842 /* GesturePassword */,
 				97384DC61E6FA34900E00A3C /* Animation */,
 				97384DCB1E6FA34900E00A3C /* EasyMisreadWord */,
 				97A8713A1E69B49B0006E471 /* DemoList */,
@@ -568,6 +578,24 @@
 				9766CAF61E8903B000E3EAEA /* ULWeatherManager.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		977A598A1E94D7AB00889842 /* GesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */,
+			);
+			path = GesturePassword;
+			sourceTree = "<group>";
+		};
+		977A598D1E94D89F00889842 /* GesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				977A598E1E94D8C600889842 /* ULGesturePasswordThumbnailView.swift */,
+				977A59901E94D8DE00889842 /* ULGesturePasswordDrawView.swift */,
+				977A59921E94E6A200889842 /* ULGesturePasswordCircle.swift */,
+			);
+			path = GesturePassword;
 			sourceTree = "<group>";
 		};
 		97A8713A1E69B49B0006E471 /* DemoList */ = {
@@ -752,11 +780,13 @@
 				9702887D1E83BC6D00B2ED49 /* ULBaseViewModel.swift in Sources */,
 				975390BB1E84B9AE003535C8 /* UIView+ULFrame.swift in Sources */,
 				970288761E83B25300B2ED49 /* ULWeatherRegionView.swift in Sources */,
+				977A598C1E94D7EC00889842 /* ULGesturePasswordViewController.swift in Sources */,
 				9766CAF91E89171700E3EAEA /* ULWeatherLiveView.swift in Sources */,
 				97A3C0161E820B9C00FDC7EE /* ULPageControlChimayo.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
 				97A3C01C1E82441A00FDC7EE /* ULPageControlAji.swift in Sources */,
 				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
+				977A598F1E94D8C600889842 /* ULGesturePasswordThumbnailView.swift in Sources */,
 				976DD20A1E856E37006B21EB /* UIViewController+ULTransparent.swift in Sources */,
 				975390A71E84ACF5003535C8 /* ULWeatherDateView.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
@@ -764,6 +794,7 @@
 				9766CAF41E88DDF200E3EAEA /* Date+ULFormatter.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
 				975390B71E84B9AE003535C8 /* UIColor+ULGenerate.swift in Sources */,
+				977A59911E94D8DE00889842 /* ULGesturePasswordDrawView.swift in Sources */,
 				975390BA1E84B9AE003535C8 /* UIView+ULEffect.swift in Sources */,
 				975390CE1E85113B003535C8 /* ULTransitionStyleOneAnimation.swift in Sources */,
 				971110E91E81273B00487CC0 /* ULPageControlJaloro.swift in Sources */,
@@ -786,6 +817,7 @@
 				9766CAF21E88DDC700E3EAEA /* Date+ULComponent.swift in Sources */,
 				974CB7A21E6863DB000DB955 /* ULNotificationCenterManager+ULSidebar.swift in Sources */,
 				9759B87E1E8A4BEA002DF966 /* ULWeatherForecastView.swift in Sources */,
+				977A59931E94E6A200889842 /* ULGesturePasswordCircle.swift in Sources */,
 				97384DDD1E6FDDB600E00A3C /* ULAnimationFoldingView.swift in Sources */,
 				9759B88E1E8A6A48002DF966 /* ULWaveStyleOneView.swift in Sources */,
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,

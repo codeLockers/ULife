@@ -53,4 +53,22 @@ extension ULChartListViewController : UITableViewDelegate , UITableViewDataSourc
         cell?.textLabel?.text = self.chartNames[indexPath.row]
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let chartPieView = ULChartPieView.init(frame: ULConstants.screen.bounces)
+            chartPieView.delegate = self;
+            self.navigationController?.view.addSubview(chartPieView)
+        default:
+            break
+        }
+    }
+}
+
+extension ULChartListViewController : ULDemoBaseViewDelegate {
+    func demoBaseViewCloseButtonPressed(_ animationView: ULDemoBaseView) {
+        if animationView.superview != nil {
+            animationView.removeFromSuperview()
+        }
+    }
 }

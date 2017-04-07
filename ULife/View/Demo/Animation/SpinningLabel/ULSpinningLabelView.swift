@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ULSpinningLabelView: ULAnimationBaseView {
+class ULSpinningLabelView: ULDemoBaseView {
 
     fileprivate let tilteView : UIView = UIView()
     fileprivate let tableView : UITableView = UITableView()

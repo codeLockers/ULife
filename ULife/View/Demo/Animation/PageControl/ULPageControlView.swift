@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ULPageControlView: ULAnimationBaseView {
+class ULPageControlView: ULDemoBaseView {
 
     fileprivate let collectionView : UICollectionView = {
         

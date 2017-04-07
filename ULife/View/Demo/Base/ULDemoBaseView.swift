@@ -1,5 +1,5 @@
 //
-//  ULAnimationBaseView.swift
+//  ULDemoBaseView.swift
 //  ULife
 //
 //  Created by codeLocker on 2017/3/4.
@@ -9,17 +9,17 @@
 import UIKit
 import SnapKit
 
-@objc protocol ULAnimationBaseViewDelegate : NSObjectProtocol {
-    @objc optional func aniamtionViewCloseButtonPressed(_ animationView : ULAnimationBaseView)
+@objc protocol ULDemoBaseViewDelegate : NSObjectProtocol {
+    @objc optional func demoBaseViewCloseButtonPressed(_ animationView : ULDemoBaseView)
 }
 
-class ULAnimationBaseView: UIView {
+class ULDemoBaseView: UIView {
 
     fileprivate let closeBtn : UIButton = UIButton()
 
     let startBtn : UIButton = UIButton()
     
-    var delegate : ULAnimationBaseViewDelegate?
+    var delegate : ULDemoBaseViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -65,7 +65,7 @@ class ULAnimationBaseView: UIView {
     
     //MARK: - UIButton_Methods
     @objc private func closeBtn_Pressed(){
-        self.delegate?.aniamtionViewCloseButtonPressed?(self)
+        self.delegate?.demoBaseViewCloseButtonPressed?(self)
     }
     
     @objc func startBtn_Pressed(_ sender:UIButton) {

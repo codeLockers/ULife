@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ULWaveStyleOneView: ULAnimationBaseView {
+class ULWaveStyleOneView: ULDemoBaseView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

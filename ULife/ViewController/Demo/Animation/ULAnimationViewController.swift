@@ -102,9 +102,9 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
     }
 }
 
-extension ULAnimationViewController:ULAnimationBaseViewDelegate{
+extension ULAnimationViewController:ULDemoBaseViewDelegate{
 
-    func aniamtionViewCloseButtonPressed(_ animationView : ULAnimationBaseView){
+    func demoBaseViewCloseButtonPressed(_ animationView : ULDemoBaseView){
         
         if animationView.superview != nil {
             animationView.removeFromSuperview()

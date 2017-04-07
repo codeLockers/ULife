@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ULAnimationButtonView: ULAnimationBaseView {
+class ULAnimationButtonView: ULDemoBaseView {
 
     private let animationButtonOne = ULAnimationButtonOne()
     

@@ -51,7 +51,6 @@
 		977A598C1E94D7EC00889842 /* ULGesturePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */; };
 		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
 		97CB18521E97261000EEBD86 /* ULChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18511E97261000EEBD86 /* ULChartListViewController.swift */; };
-		97CB18561E97299B00EEBD86 /* ULChartPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18551E97299B00EEBD86 /* ULChartPieView.swift */; };
 		97CB185B1E9729C600EEBD86 /* ULGesturePasswordCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18581E9729C600EEBD86 /* ULGesturePasswordCircle.swift */; };
 		97CB185C1E9729C600EEBD86 /* ULGesturePasswordDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18591E9729C600EEBD86 /* ULGesturePasswordDrawView.swift */; };
 		97CB185D1E9729C600EEBD86 /* ULGesturePasswordThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB185A1E9729C600EEBD86 /* ULGesturePasswordThumbnailView.swift */; };
@@ -79,9 +78,10 @@
 		97CB18B41E972E5C00EEBD86 /* ULSpinningLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18B21E972E5C00EEBD86 /* ULSpinningLabel.swift */; };
 		97CB18B51E972E5C00EEBD86 /* ULSpinningLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18B31E972E5C00EEBD86 /* ULSpinningLabelView.swift */; };
 		97CB18BD1E972EBF00EEBD86 /* ULAnimationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18B71E972EBF00EEBD86 /* ULAnimationButtonView.swift */; };
-		97CB18BE1E972EBF00EEBD86 /* ULAnimationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18B91E972EBF00EEBD86 /* ULAnimationBaseView.swift */; };
 		97CB18BF1E972EBF00EEBD86 /* ULAnimationFoldingRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18BB1E972EBF00EEBD86 /* ULAnimationFoldingRotateView.swift */; };
 		97CB18C01E972EBF00EEBD86 /* ULAnimationFoldingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18BC1E972EBF00EEBD86 /* ULAnimationFoldingView.swift */; };
+		97CB18C31E9730D300EEBD86 /* ULChartPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18C21E9730D300EEBD86 /* ULChartPieView.swift */; };
+		97CB18C61E97325500EEBD86 /* ULDemoBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */; };
 		97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +134,6 @@
 		977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordViewController.swift; sourceTree = "<group>"; };
 		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
 		97CB18511E97261000EEBD86 /* ULChartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULChartListViewController.swift; sourceTree = "<group>"; };
-		97CB18551E97299B00EEBD86 /* ULChartPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULChartPieView.swift; sourceTree = "<group>"; };
 		97CB18581E9729C600EEBD86 /* ULGesturePasswordCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordCircle.swift; sourceTree = "<group>"; };
 		97CB18591E9729C600EEBD86 /* ULGesturePasswordDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordDrawView.swift; sourceTree = "<group>"; };
 		97CB185A1E9729C600EEBD86 /* ULGesturePasswordThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordThumbnailView.swift; sourceTree = "<group>"; };
@@ -162,9 +161,10 @@
 		97CB18B21E972E5C00EEBD86 /* ULSpinningLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSpinningLabel.swift; sourceTree = "<group>"; };
 		97CB18B31E972E5C00EEBD86 /* ULSpinningLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULSpinningLabelView.swift; sourceTree = "<group>"; };
 		97CB18B71E972EBF00EEBD86 /* ULAnimationButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationButtonView.swift; sourceTree = "<group>"; };
-		97CB18B91E972EBF00EEBD86 /* ULAnimationBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationBaseView.swift; sourceTree = "<group>"; };
 		97CB18BB1E972EBF00EEBD86 /* ULAnimationFoldingRotateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationFoldingRotateView.swift; sourceTree = "<group>"; };
 		97CB18BC1E972EBF00EEBD86 /* ULAnimationFoldingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULAnimationFoldingView.swift; sourceTree = "<group>"; };
+		97CB18C21E9730D300EEBD86 /* ULChartPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULChartPieView.swift; sourceTree = "<group>"; };
+		97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoBaseView.swift; sourceTree = "<group>"; };
 		97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNavBarTransparentViewController.swift; sourceTree = "<group>"; };
 		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				97CB18541E97298000EEBD86 /* Demo */,
-				97CB18531E97296800EEBD86 /* Chart */,
 				970288801E83D01C00B2ED49 /* Common */,
 				970288711E83B1FF00B2ED49 /* Weather */,
 				971C9B071E5D7E4D00928B0E /* Sidebar */,
@@ -522,17 +521,11 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
-		97CB18531E97296800EEBD86 /* Chart */ = {
-			isa = PBXGroup;
-			children = (
-				97CB18551E97299B00EEBD86 /* ULChartPieView.swift */,
-			);
-			path = Chart;
-			sourceTree = "<group>";
-		};
 		97CB18541E97298000EEBD86 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				97CB18C41E97325500EEBD86 /* Base */,
+				97CB18C11E9730C400EEBD86 /* Chart */,
 				97CB18631E972BEC00EEBD86 /* Animation */,
 				97CB18571E9729C600EEBD86 /* GesturePassword */,
 			);
@@ -577,7 +570,6 @@
 			isa = PBXGroup;
 			children = (
 				97CB18B61E972EBF00EEBD86 /* AnimationButton */,
-				97CB18B81E972EBF00EEBD86 /* BaseView */,
 				97CB18BA1E972EBF00EEBD86 /* FoldingCell */,
 				97CB18B11E972E5C00EEBD86 /* SpinningLabel */,
 				97CB18901E972D6100EEBD86 /* Loading */,
@@ -650,14 +642,6 @@
 			path = AnimationButton;
 			sourceTree = "<group>";
 		};
-		97CB18B81E972EBF00EEBD86 /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
-				97CB18B91E972EBF00EEBD86 /* ULAnimationBaseView.swift */,
-			);
-			path = BaseView;
-			sourceTree = "<group>";
-		};
 		97CB18BA1E972EBF00EEBD86 /* FoldingCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +649,22 @@
 				97CB18BC1E972EBF00EEBD86 /* ULAnimationFoldingView.swift */,
 			);
 			path = FoldingCell;
+			sourceTree = "<group>";
+		};
+		97CB18C11E9730C400EEBD86 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				97CB18C21E9730D300EEBD86 /* ULChartPieView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		97CB18C41E97325500EEBD86 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		97F839A51E7B8A1000589AED /* NavBarTransparent */ = {
@@ -820,6 +820,7 @@
 				974CB7A41E6863ED000DB955 /* ULNotificationCenterManager+ULWeather.swift in Sources */,
 				974CB79A1E68604C000DB955 /* ULBaseViewController.swift in Sources */,
 				97CB18621E972A6E00EEBD86 /* ULMisreadWordModel.swift in Sources */,
+				97CB18C61E97325500EEBD86 /* ULDemoBaseView.swift in Sources */,
 				97CB18A51E972DBB00EEBD86 /* ULPageControlChimayo.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
 				975390B61E84B9AE003535C8 /* NSMutableAttributedString+ULGenerate.swift in Sources */,
@@ -828,6 +829,7 @@
 				97CB18AC1E972DBB00EEBD86 /* ULPageControlView.swift in Sources */,
 				975390BB1E84B9AE003535C8 /* UIView+ULFrame.swift in Sources */,
 				970288761E83B25300B2ED49 /* ULWeatherRegionView.swift in Sources */,
+				97CB18C31E9730D300EEBD86 /* ULChartPieView.swift in Sources */,
 				97CB185C1E9729C600EEBD86 /* ULGesturePasswordDrawView.swift in Sources */,
 				97CB18B41E972E5C00EEBD86 /* ULSpinningLabel.swift in Sources */,
 				97CB18B51E972E5C00EEBD86 /* ULSpinningLabelView.swift in Sources */,
@@ -882,13 +884,11 @@
 				97CB18A91E972DBB00EEBD86 /* ULPageControlLayer.swift in Sources */,
 				97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */,
 				97CB18AB1E972DBB00EEBD86 /* ULPageControlPuya.swift in Sources */,
-				97CB18561E97299B00EEBD86 /* ULChartPieView.swift in Sources */,
 				97CB18961E972DB000EEBD86 /* ULLoadingStyleOneView.swift in Sources */,
 				97CB18BF1E972EBF00EEBD86 /* ULAnimationFoldingRotateView.swift in Sources */,
 				975390B81E84B9AE003535C8 /* UIImage+ULBitmap.swift in Sources */,
 				97CB18671E972BEC00EEBD86 /* ULWaveStyleOne.swift in Sources */,
 				9702887B1E83B40500B2ED49 /* ULWeatherViewModel.swift in Sources */,
-				97CB18BE1E972EBF00EEBD86 /* ULAnimationBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

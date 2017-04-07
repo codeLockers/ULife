@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ULAnimationFoldingView: ULAnimationBaseView {
+class ULAnimationFoldingView: ULDemoBaseView {
     //第一部分视图
     fileprivate let foregroundView : ULAnimationFoldingRotateView = ULAnimationFoldingRotateView()
     //第二部分视图容器

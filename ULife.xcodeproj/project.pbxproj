@@ -50,7 +50,16 @@
 		976DD20C1E856FAE006B21EB /* UINavigationController+ULTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */; };
 		977A598C1E94D7EC00889842 /* ULGesturePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */; };
 		97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */; };
+		97BDA4C71E9DC54100BBEFD0 /* ULEmitterSnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4C61E9DC54100BBEFD0 /* ULEmitterSnowView.swift */; };
+		97BDA4CA1E9DC56A00BBEFD0 /* ULEmitterHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4C91E9DC56A00BBEFD0 /* ULEmitterHeartView.swift */; };
+		97BDA4CC1E9DC57700BBEFD0 /* ULEmitterFireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4CB1E9DC57700BBEFD0 /* ULEmitterFireView.swift */; };
+		97BDA4CE1E9DC58300BBEFD0 /* ULEmitterTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4CD1E9DC58300BBEFD0 /* ULEmitterTouchView.swift */; };
+		97BDA4D01E9DC59400BBEFD0 /* ULEmitterFireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4CF1E9DC59400BBEFD0 /* ULEmitterFireworksView.swift */; };
+		97BDA4D21E9DC59F00BBEFD0 /* ULEmitterLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4D11E9DC59F00BBEFD0 /* ULEmitterLikeView.swift */; };
+		97BDA4D41E9DFCF200BBEFD0 /* ULEmitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4D31E9DFCF200BBEFD0 /* ULEmitterButton.swift */; };
+		97BDA4D61E9DFD0D00BBEFD0 /* ULEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDA4D51E9DFD0D00BBEFD0 /* ULEmitterView.swift */; };
 		97BDD04C1E9B5EDF00258D56 /* CGPoint+ULCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDD04B1E9B5EDF00258D56 /* CGPoint+ULCalculate.swift */; };
+		97C3DDD61E9DC18B009B124D /* ULEmitterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C3DDD51E9DC18B009B124D /* ULEmitterListViewController.swift */; };
 		97CB18521E97261000EEBD86 /* ULChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18511E97261000EEBD86 /* ULChartListViewController.swift */; };
 		97CB185B1E9729C600EEBD86 /* ULGesturePasswordCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18581E9729C600EEBD86 /* ULGesturePasswordCircle.swift */; };
 		97CB185C1E9729C600EEBD86 /* ULGesturePasswordDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18591E9729C600EEBD86 /* ULGesturePasswordDrawView.swift */; };
@@ -135,7 +144,16 @@
 		976DD20B1E856FAE006B21EB /* UINavigationController+ULTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ULTransparent.swift"; sourceTree = "<group>"; };
 		977A598B1E94D7EC00889842 /* ULGesturePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordViewController.swift; sourceTree = "<group>"; };
 		97A8713B1E69B49B0006E471 /* ULDemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoListViewController.swift; sourceTree = "<group>"; };
+		97BDA4C61E9DC54100BBEFD0 /* ULEmitterSnowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterSnowView.swift; sourceTree = "<group>"; };
+		97BDA4C91E9DC56A00BBEFD0 /* ULEmitterHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterHeartView.swift; sourceTree = "<group>"; };
+		97BDA4CB1E9DC57700BBEFD0 /* ULEmitterFireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterFireView.swift; sourceTree = "<group>"; };
+		97BDA4CD1E9DC58300BBEFD0 /* ULEmitterTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterTouchView.swift; sourceTree = "<group>"; };
+		97BDA4CF1E9DC59400BBEFD0 /* ULEmitterFireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterFireworksView.swift; sourceTree = "<group>"; };
+		97BDA4D11E9DC59F00BBEFD0 /* ULEmitterLikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterLikeView.swift; sourceTree = "<group>"; };
+		97BDA4D31E9DFCF200BBEFD0 /* ULEmitterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterButton.swift; sourceTree = "<group>"; };
+		97BDA4D51E9DFD0D00BBEFD0 /* ULEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterView.swift; sourceTree = "<group>"; };
 		97BDD04B1E9B5EDF00258D56 /* CGPoint+ULCalculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+ULCalculate.swift"; sourceTree = "<group>"; };
+		97C3DDD51E9DC18B009B124D /* ULEmitterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULEmitterListViewController.swift; sourceTree = "<group>"; };
 		97CB18511E97261000EEBD86 /* ULChartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULChartListViewController.swift; sourceTree = "<group>"; };
 		97CB18581E9729C600EEBD86 /* ULGesturePasswordCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordCircle.swift; sourceTree = "<group>"; };
 		97CB18591E9729C600EEBD86 /* ULGesturePasswordDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULGesturePasswordDrawView.swift; sourceTree = "<group>"; };
@@ -360,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */,
+				97C3DDD41E9DC171009B124D /* Emitter */,
 				975390C31E84EAA9003535C8 /* Transition */,
 				97F839A51E7B8A1000589AED /* NavBarTransparent */,
 			);
@@ -526,6 +545,29 @@
 			path = CGPoint;
 			sourceTree = "<group>";
 		};
+		97C3DDD31E9DC142009B124D /* Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				97BDA4C61E9DC54100BBEFD0 /* ULEmitterSnowView.swift */,
+				97BDA4C91E9DC56A00BBEFD0 /* ULEmitterHeartView.swift */,
+				97BDA4CB1E9DC57700BBEFD0 /* ULEmitterFireView.swift */,
+				97BDA4CD1E9DC58300BBEFD0 /* ULEmitterTouchView.swift */,
+				97BDA4CF1E9DC59400BBEFD0 /* ULEmitterFireworksView.swift */,
+				97BDA4D11E9DC59F00BBEFD0 /* ULEmitterLikeView.swift */,
+				97BDA4D31E9DFCF200BBEFD0 /* ULEmitterButton.swift */,
+				97BDA4D51E9DFD0D00BBEFD0 /* ULEmitterView.swift */,
+			);
+			path = Emitter;
+			sourceTree = "<group>";
+		};
+		97C3DDD41E9DC171009B124D /* Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				97C3DDD51E9DC18B009B124D /* ULEmitterListViewController.swift */,
+			);
+			path = Emitter;
+			sourceTree = "<group>";
+		};
 		97CB184D1E97221600EEBD86 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +624,7 @@
 		97CB18631E972BEC00EEBD86 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				97C3DDD31E9DC142009B124D /* Emitter */,
 				97CB18B61E972EBF00EEBD86 /* AnimationButton */,
 				97CB18BA1E972EBF00EEBD86 /* FoldingCell */,
 				97CB18B11E972E5C00EEBD86 /* SpinningLabel */,
@@ -736,7 +779,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = codeLocker;
 				TargetAttributes = {
 					971C9AE31E5D592300928B0E = {
@@ -854,19 +897,26 @@
 				97CB18A41E972DBB00EEBD86 /* ULPageControlAleppo.swift in Sources */,
 				97CB18A21E972DBB00EEBD86 /* ULBasePageControl.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
+				97BDA4C71E9DC54100BBEFD0 /* ULEmitterSnowView.swift in Sources */,
 				97A8713C1E69B49B0006E471 /* ULDemoListViewController.swift in Sources */,
+				97BDA4D01E9DC59400BBEFD0 /* ULEmitterFireworksView.swift in Sources */,
 				976DD20A1E856E37006B21EB /* UIViewController+ULTransparent.swift in Sources */,
+				97C3DDD61E9DC18B009B124D /* ULEmitterListViewController.swift in Sources */,
 				97CB18951E972DB000EEBD86 /* ULBaseLoadingView.swift in Sources */,
 				975390A71E84ACF5003535C8 /* ULWeatherDateView.swift in Sources */,
 				971C9B051E5D7DB000928B0E /* AppDelegate.swift in Sources */,
+				97BDA4D41E9DFCF200BBEFD0 /* ULEmitterButton.swift in Sources */,
+				97BDA4D21E9DC59F00BBEFD0 /* ULEmitterLikeView.swift in Sources */,
 				9766CAF41E88DDF200E3EAEA /* Date+ULFormatter.swift in Sources */,
 				971C9B091E5D7E6E00928B0E /* ULSidebar.swift in Sources */,
 				97CB18A31E972DBB00EEBD86 /* ULPageControlAji.swift in Sources */,
 				975390B71E84B9AE003535C8 /* UIColor+ULGenerate.swift in Sources */,
 				975390BA1E84B9AE003535C8 /* UIView+ULEffect.swift in Sources */,
+				97BDA4CE1E9DC58300BBEFD0 /* ULEmitterTouchView.swift in Sources */,
 				97CB18721E972CBF00EEBD86 /* ULTransitionStyleOneDetailViewController.swift in Sources */,
 				97CB18BD1E972EBF00EEBD86 /* ULAnimationButtonView.swift in Sources */,
 				97384DD11E6FA34900E00A3C /* ULEasyMisreadWordViewController.swift in Sources */,
+				97BDA4D61E9DFD0D00BBEFD0 /* ULEmitterView.swift in Sources */,
 				97CB18A61E972DBB00EEBD86 /* ULPageControlFresno.swift in Sources */,
 				9766CAF71E8903B000E3EAEA /* ULWeatherManager.swift in Sources */,
 				97384DCE1E6FA34900E00A3C /* ULAnimationViewController.swift in Sources */,
@@ -881,6 +931,7 @@
 				9702886C1E83A38C00B2ED49 /* ULLocationManager.swift in Sources */,
 				971C9AFD1E5D5D6D00928B0E /* ULWeatherViewController.swift in Sources */,
 				97CB18AF1E972DC300EEBD86 /* ULTransitionStyleOneCollectionViewCell.swift in Sources */,
+				97BDA4CA1E9DC56A00BBEFD0 /* ULEmitterHeartView.swift in Sources */,
 				971C9AFF1E5D5F5100928B0E /* ULBaseNavigationController.swift in Sources */,
 				9766CAF21E88DDC700E3EAEA /* Date+ULComponent.swift in Sources */,
 				97CB18A81E972DBB00EEBD86 /* ULPageControlJaloro.swift in Sources */,
@@ -892,6 +943,7 @@
 				971C9B0C1E5D832900928B0E /* ULConstants.swift in Sources */,
 				9759B8821E8A5CA6002DF966 /* UINavigationController+ULInterface.swift in Sources */,
 				97CB18CA1E973E5E00EEBD86 /* ULPieChart.swift in Sources */,
+				97BDA4CC1E9DC57700BBEFD0 /* ULEmitterFireView.swift in Sources */,
 				9759B8841E8A6264002DF966 /* UIView+ULHud.swift in Sources */,
 				97CB18A71E972DBB00EEBD86 /* ULPageControlJalapeno.swift in Sources */,
 				97CB18731E972CBF00EEBD86 /* ULTransitionStyleOneViewController.swift in Sources */,
@@ -1021,6 +1073,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BC929A7D14E3DABC4AE9FE2 /* Pods-ULife.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -1043,6 +1096,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;

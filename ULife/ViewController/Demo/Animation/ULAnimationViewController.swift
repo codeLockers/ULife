@@ -19,7 +19,8 @@ class ULAnimationViewController: ULBaseViewController {
                                                      "SinningLabel",
                                                      "PageControl",
                                                      "TransitionStyleOne",
-                                                     "ULWaveStyleOneView"]
+                                                     "ULWaveStyleOneView",
+                                                     "Emitter"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +97,9 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
             let animationView = ULWaveStyleOneView.init(frame: ULConstants.screen.bounces)
             animationView.delegate = self
             navigationController?.view.addSubview(animationView)
+        case 7:
+            let emitterListVc = ULEmitterListViewController()
+            navigationController?.pushViewController(emitterListVc, animated: true)
         default:
             break
         }

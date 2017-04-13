@@ -81,14 +81,11 @@ class ULWeatherLiveView: UIView {
     }()
     
     fileprivate var liveWeather : AMapLocalWeatherLive? {
-        set {
-            guard newValue != nil else {
+        didSet {
+            if liveWeather == nil {
                 return
             }
-            self.updateLiveWeather(newValue!)
-        }
-        get {
-            return self.liveWeather
+            self.updateLiveWeather(liveWeather!)
         }
     }
     
@@ -296,7 +293,7 @@ class ULWeatherLiveDetailView : UIView {
             self.titleLab.text = newValue
         }
         get {
-            return self.title
+            return self.titleLab.text
         }
     }
     
@@ -305,7 +302,7 @@ class ULWeatherLiveDetailView : UIView {
             self.temperatureLabel.text = newValue
         }
         get {
-            return self.temperature
+            return self.temperatureLabel.text
         }
     }
     
@@ -314,7 +311,7 @@ class ULWeatherLiveDetailView : UIView {
             self.windLabel.text = newValue
         }
         get {
-            return self.wind
+            return self.windLabel.text
         }
     }
     
@@ -323,7 +320,7 @@ class ULWeatherLiveDetailView : UIView {
             self.humidityLabel.text = newValue
         }
         get {
-            return self.humidity
+            return self.humidityLabel.text
         }
     }
     

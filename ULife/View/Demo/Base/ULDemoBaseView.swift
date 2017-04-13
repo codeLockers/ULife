@@ -19,7 +19,7 @@ class ULDemoBaseView: UIView {
 
     let startBtn : UIButton = UIButton()
     
-    var delegate : ULDemoBaseViewDelegate?
+    weak var delegate : ULDemoBaseViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)

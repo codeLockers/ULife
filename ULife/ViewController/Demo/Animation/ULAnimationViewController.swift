@@ -20,7 +20,8 @@ class ULAnimationViewController: ULBaseViewController {
                                                      "PageControl",
                                                      "TransitionStyleOne",
                                                      "ULWaveStyleOneView",
-                                                     "Emitter"]
+                                                     "Emitter",
+                                                     "Shimmer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,6 +101,8 @@ extension ULAnimationViewController : UITableViewDelegate,UITableViewDataSource{
         case 7:
             let emitterListVc = ULEmitterListViewController()
             navigationController?.pushViewController(emitterListVc, animated: true)
+        case 8:
+            navigationController?.pushViewController(ULShimmerViewController(), animated: true)
         default:
             break
         }

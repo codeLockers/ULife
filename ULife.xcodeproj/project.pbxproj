@@ -93,6 +93,10 @@
 		97CB18C31E9730D300EEBD86 /* ULChartPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18C21E9730D300EEBD86 /* ULChartPieView.swift */; };
 		97CB18C61E97325500EEBD86 /* ULDemoBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */; };
 		97CB18CA1E973E5E00EEBD86 /* ULPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CB18C91E973E5E00EEBD86 /* ULPieChart.swift */; };
+		97F5BA941EA45DAA008A6981 /* ULShimmerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5BA931EA45DAA008A6981 /* ULShimmerViewController.swift */; };
+		97F5BA971EA45F81008A6981 /* ULShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5BA961EA45F81008A6981 /* ULShimmeringView.swift */; };
+		97F5BA991EA45F9D008A6981 /* ULShimmeringLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5BA981EA45F9D008A6981 /* ULShimmeringLayer.swift */; };
+		97F5BA9B1EA463D8008A6981 /* ULShimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5BA9A1EA463D8008A6981 /* ULShimmering.swift */; };
 		97F839A91E7BAAB500589AED /* ULNavBarTransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +191,10 @@
 		97CB18C21E9730D300EEBD86 /* ULChartPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULChartPieView.swift; sourceTree = "<group>"; };
 		97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULDemoBaseView.swift; sourceTree = "<group>"; };
 		97CB18C91E973E5E00EEBD86 /* ULPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULPieChart.swift; sourceTree = "<group>"; };
+		97F5BA931EA45DAA008A6981 /* ULShimmerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULShimmerViewController.swift; sourceTree = "<group>"; };
+		97F5BA961EA45F81008A6981 /* ULShimmeringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULShimmeringView.swift; sourceTree = "<group>"; };
+		97F5BA981EA45F9D008A6981 /* ULShimmeringLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULShimmeringLayer.swift; sourceTree = "<group>"; };
+		97F5BA9A1EA463D8008A6981 /* ULShimmering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULShimmering.swift; sourceTree = "<group>"; };
 		97F839A81E7BAAB500589AED /* ULNavBarTransparentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ULNavBarTransparentViewController.swift; sourceTree = "<group>"; };
 		C422E673A071FF85922C66EF /* Pods-ULife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULife.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULife/Pods-ULife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -378,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				97384DC71E6FA34900E00A3C /* ULAnimationViewController.swift */,
+				97F5BA921EA45D82008A6981 /* Shimmer */,
 				97C3DDD41E9DC171009B124D /* Emitter */,
 				975390C31E84EAA9003535C8 /* Transition */,
 				97F839A51E7B8A1000589AED /* NavBarTransparent */,
@@ -624,6 +633,7 @@
 		97CB18631E972BEC00EEBD86 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				97F5BA951EA45F55008A6981 /* Shimmer */,
 				97C3DDD31E9DC142009B124D /* Emitter */,
 				97CB18B61E972EBF00EEBD86 /* AnimationButton */,
 				97CB18BA1E972EBF00EEBD86 /* FoldingCell */,
@@ -722,6 +732,24 @@
 				97CB18C51E97325500EEBD86 /* ULDemoBaseView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		97F5BA921EA45D82008A6981 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				97F5BA931EA45DAA008A6981 /* ULShimmerViewController.swift */,
+			);
+			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		97F5BA951EA45F55008A6981 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				97F5BA961EA45F81008A6981 /* ULShimmeringView.swift */,
+				97F5BA981EA45F9D008A6981 /* ULShimmeringLayer.swift */,
+				97F5BA9A1EA463D8008A6981 /* ULShimmering.swift */,
+			);
+			path = Shimmer;
 			sourceTree = "<group>";
 		};
 		97F839A51E7B8A1000589AED /* NavBarTransparent */ = {
@@ -879,6 +907,7 @@
 				97CB18621E972A6E00EEBD86 /* ULMisreadWordModel.swift in Sources */,
 				97CB18C61E97325500EEBD86 /* ULDemoBaseView.swift in Sources */,
 				97CB18A51E972DBB00EEBD86 /* ULPageControlChimayo.swift in Sources */,
+				97F5BA941EA45DAA008A6981 /* ULShimmerViewController.swift in Sources */,
 				973955C11E629B4300CD6B18 /* ULTestViewController.swift in Sources */,
 				975390B61E84B9AE003535C8 /* NSMutableAttributedString+ULGenerate.swift in Sources */,
 				9707F1A61E66C72600B7718F /* ULSidebarCell.swift in Sources */,
@@ -890,11 +919,13 @@
 				97CB185C1E9729C600EEBD86 /* ULGesturePasswordDrawView.swift in Sources */,
 				97CB18B41E972E5C00EEBD86 /* ULSpinningLabel.swift in Sources */,
 				97CB18B51E972E5C00EEBD86 /* ULSpinningLabelView.swift in Sources */,
+				97F5BA9B1EA463D8008A6981 /* ULShimmering.swift in Sources */,
 				977A598C1E94D7EC00889842 /* ULGesturePasswordViewController.swift in Sources */,
 				9766CAF91E89171700E3EAEA /* ULWeatherLiveView.swift in Sources */,
 				97CB18521E97261000EEBD86 /* ULChartListViewController.swift in Sources */,
 				97CB18711E972CBF00EEBD86 /* ULTransitionStyleOneAnimation.swift in Sources */,
 				97CB18A41E972DBB00EEBD86 /* ULPageControlAleppo.swift in Sources */,
+				97F5BA971EA45F81008A6981 /* ULShimmeringView.swift in Sources */,
 				97CB18A21E972DBB00EEBD86 /* ULBasePageControl.swift in Sources */,
 				974CB7A01E686125000DB955 /* ULNotificationCenterManager.swift in Sources */,
 				97BDA4C71E9DC54100BBEFD0 /* ULEmitterSnowView.swift in Sources */,
@@ -955,6 +986,7 @@
 				97CB18961E972DB000EEBD86 /* ULLoadingStyleOneView.swift in Sources */,
 				97CB18BF1E972EBF00EEBD86 /* ULAnimationFoldingRotateView.swift in Sources */,
 				975390B81E84B9AE003535C8 /* UIImage+ULBitmap.swift in Sources */,
+				97F5BA991EA45F9D008A6981 /* ULShimmeringLayer.swift in Sources */,
 				97CB18671E972BEC00EEBD86 /* ULWaveStyleOne.swift in Sources */,
 				9702887B1E83B40500B2ED49 /* ULWeatherViewModel.swift in Sources */,
 			);
